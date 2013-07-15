@@ -1,0 +1,269 @@
+/* Youth Skills Center Website Main Styles */
+
+/* 
+	Last Updated: April 18th, 2013
+	Copyright (C) 2013 Youth Skills Center & S. Zain Mehdi & Z Computers.
+*/
+
+body {
+	/* Basic overrides */
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	
+	/* Site-wide font & other basic styles */
+	font-family: CenturyGothic, Arial, Helvetica, sans-serif;
+	color: #222;
+}
+h1 {
+	font-family: CenturyGothic, Arial, Helvetica, sans-serif;
+	margin: 0;
+	padding: 0;
+	font-weight:normal;
+	font-size: 260%;
+}
+h2 {
+	font-family: CenturyGothic, Arial, Helvetica, sans-serif;
+	margin: 0;
+	padding: 0;
+	font-weight:normal;
+	font-size: 140%;	
+}
+h3 {
+	font-family: CenturyGothic, Arial, Helvetica, sans-serif;
+	font-size: 160%;
+	font-weight: normal;
+	color: #333;	
+	margin: 0;
+	margin-bottom: 10px;
+}
+
+a:link, a:visited {
+	color: #333;
+	text-decoration: none;	
+}
+a:hover, a:active {
+	color: #f00;
+	text-decoration: none;	
+}
+
+/* Header Styles */
+.header-logo {
+	width: 400px;
+	height: 64px;
+	background:white;
+	position:absolute;
+	z-index:500;
+	top: 24px;
+	
+}
+.header-content {
+	height: 64px;
+	position:absolute;
+	right: 18px;
+	top: 50%;
+	margin-top:-28px;
+	overflow-y: hidden;
+	overflow-x: auto;
+	white-space:nowrap;
+}
+.header-section {
+	height: 64px;
+	color: #333;
+	position:relative;
+	float: right;
+	padding: 0 10px
+}
+#phone .header-sectionText {
+	margin-top: 16px;
+	display:block;
+	font-size: 32px;
+}
+#location .header-sectionText {
+	margin-top: 20px;
+	display:block;
+	font-size: 15px;
+	line-height:17px;
+	color: #333;
+}
+#social .header-sectionText {
+	display: block;	
+}
+.social-icon {
+	display: inline-block;	
+	margin-top: 20px;
+	padding: ;
+	background-color: #aaa;
+	width: 32px;
+	height:32px;
+}
+.facebook:hover {
+	background-color: #3B5998;
+}
+.google:hover {
+	background-color: #db5a3c;
+}
+.youtube:hover {
+	background-color: #FF3333;
+}
+.myysc:hover {
+	background-color: #f00;
+}
+.header-contact .red {
+	color: #f00;
+}
+.header-contact .red {
+	color: #f00;
+}
+.header-sectionTitle {
+	
+	display: block;
+	height: 16px;
+	font-size: 12px;
+	color: #777;
+	font-weight:bold;
+	text-transform:uppercase;
+	position: absolute;
+	top: 0px;
+	border-bottom:1px solid red;
+	
+}
+
+/* Sidebar Styles */
+
+div#sidebar a.nav {
+	display:block;
+	height: 32px;
+	line-height:32px;
+	color: #444;
+	text-decoration:none;
+	padding-left: 8px;	
+	border-left: 3px solid #fff;
+}
+div#sidebar a.nav:hover {
+	color: red;
+	border-left: 3px solid red;
+}
+div#sidebar a.nav.active {
+	color: red;
+	border-left: 3px solid red;
+	box-shadow: 0 0 5px #bbb;
+}
+
+div.footer-links h4 {
+	margin: 10px 0;
+	color: #eee;
+	
+}
+div.footer-links a {
+	display:block;
+	min-height: 20px;
+	color: #ccc;
+	text-decoration:none;
+	padding-left: 0px;
+	font-size: 80%;
+	padding-left: 16px;
+}
+div#footer p a:link, div#footer p a:visited {
+	color: #fff;
+	border-bottom: 1px solid #bbb;
+}
+div#footer p a:hover, div#footer p a:active {
+	color: #fff;
+	border-bottom: 1px solid #f00;
+}
+.nav-button {
+	width: 32px;
+	height: 32px;
+	background-color: #f00;
+	position: absolute;
+	top: 32px;
+	right: 16px;
+	display: none;
+	border-radius: 4px;
+}
+@media screen and (max-width: 1080px){
+    /* rules defined inside here are only applied to browsers that support CSS media queries and the browser window is 480px or smaller */
+	div#header-wrap {
+		/* position: static !important;*/
+	}	
+	div#fluff1 {
+		/* height: 0px !important;	*/
+	}
+	div.header-content #location, div.header-content #social {
+		display: none !important;
+	}
+ }
+
+@media  (-webkit-min-device-pixel-ratio: 2),  
+             (min--moz-device-pixel-ratio: 2),  
+             (min-resolution: 300dpi), (max-width: 960px){
+    /* rules defined inside here are only applied to browsers that support CSS media queries and the browser window is 480px or smaller */
+	.header-content {
+		display: none;
+		
+	}
+	.nav-button {
+		display: block !important;	
+	}
+	.nav-button:active {
+		box-shadow: inset 0 0 15px #777;
+			
+	}
+	div#sidebar-wrap {
+		float: none !important;
+		min-height: 0px !important;
+		width: 100%;
+		background-color: rgba(255,255,255,0.95);
+		position:absolute;
+		top: 80px;
+		left: -20px;
+		z-index:50000;
+		display:none;
+		padding: 10px 0 10px 20px;
+		-webkit-box-sizing: border-box;
+		 -moz-box-sizing: border-box;
+			  box-sizing: border-box;
+	}
+	div#content {
+		margin-left: 20px !important;	
+		padding: 20px !important;
+		padding-top: 20px !important;
+		position:static;
+	}
+	#wrapper { 
+		width: 100% !important;
+	}
+	.banner-textbox {
+		position: absolute;
+		color: #fff;
+		width: 100% !important;
+		bottom: 0px !important;
+		left: 0px !important;
+	}
+	.banner-textbox .heading {
+		font-weight: bold;
+		font-size: 1.4em !important;
+		display: block;
+		padding: 10px 10px 0px 10px !important;
+		background-color: rgba(0,0,0,0.8) !important	;
+	}
+	.banner-textbox .subheading {
+		font-size: 0.9em !important;
+		display: block;
+		padding: 10px;
+		background-color: rgba(0,0,0,0.8) !important;
+		margin-top:0px !important;
+	}
+ }
+@media (max-width: 640px){
+	div.site-logo {
+		width: 129px !important;
+		background: url(../images/logos/site-logo-light-tiny.png) white no-repeat center !important;
+	}
+	.header-logo {
+		width: 129px !important;
+		
+	}
+}
+

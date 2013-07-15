@@ -1,0 +1,88 @@
+/* Font Family Definitions for Youth Skills Center Website */
+
+/* Comfortaa
+
+License: ../fonts/comfortaa/OFL.txt
+Donate to Author:  ../fonts/comfortaa/donate.html
+Downloaded from: http://aajohan.deviantart.com/art/Comfortaa-font-105395949
+
+ */
+@font-face {
+	font-family: Comfortaa;
+	src: url(../fonts/comfortaa/Comfortaa-Regular.ttf);
+	font-weight: normal;
+}
+@font-face {
+	font-family: Comfortaa;
+	src: url(../fonts/comfortaa/Comfortaa-Bold.ttf);
+	font-weight: bold;
+}
+@font-face {
+	font-family: ComfortaaL;
+	src: url(../fonts/comfortaa/Comfortaa-Light.ttf);
+	font-weight: normal;
+}
+@font-face {
+	font-family: ComfortaaL;
+	src: url(../fonts/comfortaa/Comfortaa-Regular.ttf);
+	font-weight: bold;
+}
+
+
+/* Walkaway
+
+License: ../fonts/walkaway/license.txt
+Downloaded from: http://www.fontsquirrel.com/fonts/Walkway
+
+ */
+@font-face {
+	font-family: Walkaway;
+	src: url(../fonts/walkaway/Walkway_SemiBold.ttf);
+	font-weight: normal;
+}
+@font-face {
+	font-family: Walkaway;
+	src: url(../fonts/walkaway/Walkway_UtraBold.ttf);
+	font-weight: bold;
+}
+@font-face {
+	font-family: WalkawayBold;
+	src: url(../fonts/walkaway/Walkway_UltraBold.ttf);
+	font-weight: normal;
+}
+@font-face {
+	font-family: WalkawayBold;
+	src: url(../fonts/walkaway/Walkway_Black.ttf);
+	font-weight: bold;
+}
+
+/* Century Gothic
+
+Downloaded from: 
+
+ */
+@font-face {
+	font-family: CenturyGothic;
+	src: url(../fonts/centurygothic/gothic.ttf);
+	font-weight: normal;
+}
+@font-face {
+	font-family: CenturyGothic;
+	src: url(../fonts/centurygothic/gothicb.ttf);
+	font-weight: bold;
+}
+@font-face {
+	font-family: CenturyGothicItalic;
+	src: url(../fonts/centurygothic/gothici.ttf);
+	font-weight: normal;
+}
+@font-face {
+	font-family: CenturyGothicItalic;
+	src: url(../fonts/centurygothic/gothicbi.ttf);
+	font-weight: bold;
+}
+
+
+
+
+
