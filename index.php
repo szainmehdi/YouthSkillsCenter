@@ -2,7 +2,7 @@
 <!-- 
 	Youth Skills Center Preschool & Childcare.
     Website Designed by S. Zain Mehdi.
-    Last Updated: June 13th, 2013
+    Last Updated: July 15th, 2013
     Copyright (C) 2013 Youth Skills Center & Z Computers.
 -->
 <html>
@@ -166,9 +166,9 @@
                 	<!-- copyright & related links go here -->
                     <div class="footer-links" id="footer-links1">
                     	<h4>Information</h4>
-                        <a class="fl" href="#about">About YSC</a>
-                        <a class="fl" href="#staff">Our Staff</a>
-                        <a class="fl" href="#facility">Our Facility</a>
+                        <a class="fl" href="#">About YSC</a>
+                        <a class="fl" href="#">Our Staff</a>
+                        <a class="fl" href="#">Our Facility</a>
                         <h4>MyYSC</h4>
                         <a class="fl" href="#">Login to MyYSC</a>
                         <a class="fl" href="#">Learn more about MyYSC</a>
