@@ -74,8 +74,11 @@ a.next:hover, a.next:active, a.prev:hover, a:prev:active {
 }
 .banner-textbox {
 	position: absolute;
-	color: #fff;
 	width: 33%;
+    background-color: rgba(255,255,255,0.75);
+    color: rgba(0,0,0,0.8);
+    text-shadow: 2px 2px 3px rgba(255,255,255,0.1);
+    border-top: 3px solid rgba(255,0,0,0.75);
 }
 #banner-1-text {
 	bottom: 15%;
@@ -91,15 +94,13 @@ a.next:hover, a.next:active, a.prev:hover, a:prev:active {
 }
 .banner-textbox .heading {
 	font-weight: bold;
-	font-size: 2.2em;
+	font-size: 3.2em;
 	display: block;
 	padding: 10px;
-	background-color: rgba(0,0,0,0.4)	;
 }
 .banner-textbox .subheading {
 	font-size: 1.1em;
 	display: block;
 	padding: 10px;
-	background-color: rgba(0,0,0,0.4);
 	margin-top: 15px;
 }

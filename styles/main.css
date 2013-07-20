@@ -92,7 +92,6 @@ a:hover, a:active {
 .social-icon {
 	display: inline-block;	
 	margin-top: 20px;
-	padding: ;
 	background-color: #aaa;
 	width: 32px;
 	height:32px;
@@ -193,6 +192,27 @@ div#footer p a:hover, div#footer p a:active {
 	div.header-content #location, div.header-content #social {
 		display: none !important;
 	}
+    .banner-textbox {
+        position: absolute;
+        color: #fff !important;
+        width: 100% !important;
+        bottom: 0px !important;
+        left: 0px !important;
+    }
+    .banner-textbox .heading {
+        font-weight: bold;
+        font-size: 1.4em !important;
+        display: block;
+        padding: 10px 10px 0px 10px !important;
+        background-color: rgba(0,0,0,0.8) !important	;
+    }
+    .banner-textbox .subheading {
+        font-size: 0.9em !important;
+        display: block;
+        padding: 10px;
+        background-color: rgba(0,0,0,0.8) !important;
+        margin-top:0px !important;
+    }
  }
 
 @media  (-webkit-min-device-pixel-ratio: 2),  
@@ -236,7 +256,7 @@ div#footer p a:hover, div#footer p a:active {
 	}
 	.banner-textbox {
 		position: absolute;
-		color: #fff;
+		color: #fff !important;
 		width: 100% !important;
 		bottom: 0px !important;
 		left: 0px !important;
