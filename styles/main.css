@@ -27,7 +27,8 @@ h2 {
 	margin: 0;
 	padding: 0;
 	font-weight:normal;
-	font-size: 140%;	
+	font-size: 180%;
+    text-transform: uppercase;
 }
 h3 {
 	font-family: CenturyGothic, Arial, Helvetica, sans-serif;
@@ -37,7 +38,19 @@ h3 {
 	margin: 0;
 	margin-bottom: 10px;
 }
-
+p {
+    font-family: "Roboto Slab", serif;
+    font-weight: 300;
+    color: #333;
+    font-size: 1.2em;
+}
+ul {
+    font-family: "Roboto Slab", serif;
+    font-weight: 300;
+    color: #333;
+    font-size: 1.2em;
+    list-style-type: square;
+}
 a:link, a:visited {
 	color: #333;
 	text-decoration: none;	
@@ -200,5 +213,64 @@ div#footer p a:hover, div#footer p a:active {
 	display: none;
 	border-radius: 4px;
 }
+div.banner_image {
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+div.banner_content {
+    padding: 40px;
+    position: relative;
+}
+div.banner_content h1 {
+    font-size: 3.0em;
+    padding: 10px;
+    display: block;
+    font-weight: bold;
+    float: left;
+    background-color: rgba(255, 255, 255, 0.83);
+}
 
+div.banner_content p {
+    font-size: 1.45em;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.83);
+    color: #333;
+    display: block;
+    float: left;
+    margin: 10px 0 10px 150px;
+    width: 600px;
+    clear: left;
+    font-family: "Roboto Slab", serif;
+    font-weight: 400;
+}
+div.banner_content .action_button {
+    font-size: 1.45em;
+    float: left;
+    padding: 15px 15px 15px 62px;
+    font-weight:bold;
+    cursor: pointer;
+    position: relative;
+    margin: 60px 0 0 10px;
+    background-color: rgba(0, 191, 23, 0.90);
+    color: rgb(255,255,255);
+}
+div.banner_content .action_button .icon {
+    background-image: url(../images/icons/5_content_new.png);
+    background-repeat: no-repeat;
+    background-color: rgb(0, 191, 23);
+    background-size: 32px 32px;
+    background-position: 10px 15px;
+    width: 32px;
+    padding: 0 10px;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
 
+}
+div.banner_content .action_button:hover {
+    background-color: rgba(255, 255, 255, 0.90);
+    color: rgb(0, 191, 23);
+}

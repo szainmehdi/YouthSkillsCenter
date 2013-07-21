@@ -68,12 +68,16 @@ div#content-inner-wrap {
 div.content-box {
     width: 1240px;
     /*max-width: 1280px;*/
-    min-height: 200px;
+    /*min-height: 200px;*/
     background-color: white;
     margin: 10px 0;
     box-shadow: 0 0 5px #ccc;
     display: inline-block;
+    vertical-align: top;
     /*box-sizing: border-box;*/
+}
+div.content-box-inner-wrap {
+    padding: 20px;
 }
 div.content-box.small-left {
     width: 424px;
@@ -90,6 +94,7 @@ div#footer-wrap {
 	background-color: #555;
     box-shadow: 0 0 5px #bbb;
     margin-top: 10px;
+    margin-bottom: 30px;
 }
 div#footer {
 	min-height: 200px;	
@@ -119,4 +124,11 @@ div#footer p {
 	position: absolute;
 	z-index: 1501;	
 }
-
+#copyright p {
+    font-size: 0.75em !important;
+    color: #999;
+}
+#copyright a:link, #copyright a:visited {
+    color: #777;
+    border-bottom: 1px solid #555;
+}

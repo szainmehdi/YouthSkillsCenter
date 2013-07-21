@@ -15,46 +15,12 @@
         <link href="styles/layout.css" rel="stylesheet" type="text/css" />
         <link href="styles/banners.css" rel="stylesheet" type="text/css" />
         <link href="styles/index.css" rel="stylesheet" type="text/css" />
+        <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,700,300' rel='stylesheet' type='text/css'>
         <link rel="shortcut icon" href="images/favicon/favicon_new2.ico" />
         <!-- End Stylesheets -->
         
         <!-- jQuery Plugins -->
         <script src="functions/jquery.min.js"></script>
-		<script src="functions/responsive_slides/responsiveslides.min.js"></script>
-        <script>
-		  $(function() {
-			$(".rslides").responsiveSlides({
-			  auto: true,             // Boolean: Animate automatically, true or false
-			  speed: 500,            // Integer: Speed of the transition, in milliseconds
-			  timeout: 7000,          // Integer: Time between slide transitions, in milliseconds
-			  pager: false,           // Boolean: Show pager, true or false
-			  nav: true,             // Boolean: Show navigation, true or false
-			  random: false,          // Boolean: Randomize the order of the slides, true or false
-			  pause: true,           // Boolean: Pause on hover, true or false
-			  pauseControls: true,    // Boolean: Pause when hovering controls, true or false
-			  prevText: "&lt;",   		// String: Text for the "previous" button
-			  nextText: "&gt;",      	 // String: Text for the "next" button
-			  maxwidth: "1280",           // Integer: Max-width of the slideshow, in pixels
-			  navContainer: "",       // Selector: Where controls should be appended to, default is after the 'ul'
-			  manualControls: "",     // Selector: Declare custom pager navigation
-			  namespace: "rslides",   // String: Change the default namespace used
-			  before: function(){},   // Function: Before callback
-			  after: function(){}     // Function: After callback
-			});
-			$(".nav-button").click(function() {
-				$("#sidebar-wrap").slideToggle(250);
-			});
-			$(window).resize(function() {
-				if($(document).width() > 960) {
-					$("#sidebar-wrap").slideDown(250);
-				}
-				else {
-					$("#sidebar-wrap").hide();
-				}
-			});
-			console.log($(document).width());
-		  });
-		</script>
     </head>
 	<body>
     	<div id="wrapper">
@@ -121,28 +87,50 @@
 
             <div id="content-wrap">
             	<div id="content-inner-wrap">
-                	<!--
-                	<div id="content">
-                        <!-- Main Page Content goes here -->
-                        <!--<h3>Welcome</h3>
-                        <p>Welcome to <strong><em>Youth Skills Center</em></strong>, an <strong>Early Childhood Development Center</strong> located in Jurupa Valley, CA. We are a small, family-owned center with programs for children ages 2 - 14. We have a passion for teaching and believe children learn best in a comfortable, friendly environment. With a focus on technology, we make it a point to prepare your child for the world of tomorrow. At YSC, every program is of the&nbsp;highest quality&nbsp;without compromise in affordability.</p>-->
-
-                        <!--
-                            <div class="program_card preschool">
-                                <span class="title">Preschool</span>
-                            </div>
-                        -->
-                    <!--
-                    </div>
-                    -->
                     <div class="content-box">
-
+                        <div id="large_banner_test_01" class="banner_image" style="height: 400px;background-image: url(images/banners/banner-1.jpg)">
+                            <div class="banner_content">
+                                <h1 style="background-color: rgba(98, 169, 255, 0.86);color: white;margin-top: 120px;">
+                                    Best. Summer. Ever.
+                                </h1>
+                                <p>
+                                    Enroll now in YSC's 10 week Summer Camp program for the
+                                    most enjoyable learning experience.
+                                </p>
+                                <div class="action_button">
+                                    <div class="icon"></div>
+                                    Register Now!
+                                    <a href="#"><span class="full-box-link"></span></a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <div class="content-box small-left">
-
+                        <div class="content-box-inner-wrap">
+                            <h2 style="color: #ff6b03;"><strong>New</strong> at YSC</h2>
+                        </div>
                     </div>
-                    <div class="content-box large-right">
-
+                    <div class="content-box large-right" style="background-color: #9669FE;">
+                        <div class="content-box-inner-wrap">
+                            <h2 style="color: white;"><strong>Welcome</strong> to our new website.</h2>
+                            <p style="color: white;">
+                                We've changed a few things around here. Our new website makes it easy for you to
+                                navigate around the site and learn more about our many great services.
+                            </p>
+                            <p style="color: white">
+                                Of the many changes and revamps, here are some of the noteworthy ones:
+                                <ul style="color: white">
+                                    <li>Streamlined navigation bar, with only four tabs.</li>
+                                    <li>Touch-friendly layout and design.</li>
+                                    <li>A new, modern, child-friendly design.</li>
+                                </ul>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="content-box" style="background-color: #1FCB4A;">
+                        <div class="content-box-inner-wrap">
+                            <h2 style="color: white;"><strong>Enroll Now</strong> for Preschool and Child Care!</h2>
+                        </div>
                     </div>
 
                     <!-- FOOTER -->
@@ -176,8 +164,10 @@
                                 <a class="fl" href="#"><strong>email.</strong> info@ysc5.com</a>
                                 <a class="fl" href="#"><strong>location.</strong> 5111 Felspar Street,<br /><span id="cty">Jurupa Valley, CA 92509</span></a>
                             </div>
-                            <p>Copyright &copy; <?php echo date("Y"); ?> Youth Skills Center. All images, artwork, and logos used in compliance or with permission. Site by <a href="http://www.zcomputers.org" target="_blank">Z Computers</a>. Designed and Engineered by S. Zain Mehdi.</p>
                         </div>
+                    </div>
+                    <div id="copyright">
+                        <p>Copyright &copy; <?php echo date("Y"); ?> Youth Skills Center. All images, artwork, and logos used in compliance or with permission. Site by <a href="http://www.zcomputers.org" target="_blank">Z Computers</a>. Designed and Engineered by S. Zain Mehdi.</p>
                     </div>
                 </div>
             </div>
