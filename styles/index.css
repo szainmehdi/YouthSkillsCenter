@@ -1,0 +1,24 @@
+/* Styles for /index.php */
+.program_card {
+    width: 40%;
+    min-width: 300px;
+    min-height: 200px;
+    box-sizing: border-box;
+        -moz-box-sizing: border-box;
+
+    background-color: #ffffff;
+    box-shadow: 0 1px 4px #ddd;
+    position: relative;
+}
+.program_card .title {
+    display: block;
+    padding: 5px 10px;
+
+    font-size: 3.0em;
+}
+.program_card.preschool {
+    border-left: 3px solid #48b6d2;
+}
+.program_card.preschool .title {
+    color: #48b6d2;
+}

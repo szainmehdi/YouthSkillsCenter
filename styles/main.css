@@ -46,8 +46,20 @@ a:hover, a:active {
 	color: #f00;
 	text-decoration: none;	
 }
+em {
+    border-bottom: 1px solid red;
+    font-style: normal;
+}
 
-/* Header Styles */
+/***
+ *     __   __  _______  _______  ______   _______  ______      _______  _______  __   __  ___      _______  _______
+ *    |  | |  ||       ||   _   ||      | |       ||    _ |    |       ||       ||  | |  ||   |    |       ||       |
+ *    |  |_|  ||    ___||  |_|  ||  _    ||    ___||   | ||    |  _____||_     _||  |_|  ||   |    |    ___||  _____|
+ *    |       ||   |___ |       || | |   ||   |___ |   |_||_   | |_____   |   |  |       ||   |    |   |___ | |_____
+ *    |       ||    ___||       || |_|   ||    ___||    __  |  |_____  |  |   |  |_     _||   |___ |    ___||_____  |
+ *    |   _   ||   |___ |   _   ||       ||   |___ |   |  | |   _____| |  |   |    |   |  |       ||   |___  _____| |
+ *    |__| |__||_______||__| |__||______| |_______||___|  |_|  |_______|  |___|    |___|  |_______||_______||_______|
+ */
 .header-logo {
 	width: 400px;
 	height: 64px;
@@ -61,8 +73,7 @@ a:hover, a:active {
 	height: 64px;
 	position:absolute;
 	right: 18px;
-	top: 50%;
-	margin-top:-28px;
+	top: 20px;
 	overflow-y: hidden;
 	overflow-x: auto;
 	white-space:nowrap;
@@ -128,27 +139,33 @@ a:hover, a:active {
 	
 }
 
-/* Sidebar Styles */
-
-div#sidebar a.nav {
-	display:block;
-	height: 32px;
-	line-height:32px;
-	color: #444;
-	text-decoration:none;
-	padding-left: 8px;	
-	border-left: 3px solid #fff;
+#navigation {
+    max-width: 1280px;
+    padding: 0 20px;
+    height: 32px;
+    margin: auto;
+    box-sizing: border-box;
+        -moz-box-sizing: border-box;
 }
-div#sidebar a.nav:hover {
-	color: red;
-	border-left: 3px solid red;
+#navigation .nav {
+    line-height: 32px;
+    height: 32px;
+    display: inline-block;
+    padding: 0 10px;
 }
-div#sidebar a.nav.active {
-	color: red;
-	border-left: 3px solid red;
-	box-shadow: 0 0 5px #bbb;
+#navigation .nav.active {
+    border-bottom: 3px solid red;
+    color: red;
 }
-
+/***
+ *     _______  _______  _______  _______  _______  ______      _______  _______  __   __  ___      _______  _______
+ *    |       ||       ||       ||       ||       ||    _ |    |       ||       ||  | |  ||   |    |       ||       |
+ *    |    ___||   _   ||   _   ||_     _||    ___||   | ||    |  _____||_     _||  |_|  ||   |    |    ___||  _____|
+ *    |   |___ |  | |  ||  | |  |  |   |  |   |___ |   |_||_   | |_____   |   |  |       ||   |    |   |___ | |_____
+ *    |    ___||  |_|  ||  |_|  |  |   |  |    ___||    __  |  |_____  |  |   |  |_     _||   |___ |    ___||_____  |
+ *    |   |    |       ||       |  |   |  |   |___ |   |  | |   _____| |  |   |    |   |  |       ||   |___  _____| |
+ *    |___|    |_______||_______|  |___|  |_______||___|  |_|  |_______|  |___|    |___|  |_______||_______||_______|
+ */
 div.footer-links h4 {
 	margin: 10px 0;
 	color: #eee;
@@ -171,6 +188,8 @@ div#footer p a:hover, div#footer p a:active {
 	color: #fff;
 	border-bottom: 1px solid #f00;
 }
+
+
 .nav-button {
 	width: 32px;
 	height: 32px;
@@ -181,109 +200,5 @@ div#footer p a:hover, div#footer p a:active {
 	display: none;
 	border-radius: 4px;
 }
-@media screen and (max-width: 1080px){
-    /* rules defined inside here are only applied to browsers that support CSS media queries and the browser window is 480px or smaller */
-	div#header-wrap {
-		/* position: static !important;*/
-	}	
-	div#fluff1 {
-		/* height: 0px !important;	*/
-	}
-	div.header-content #location, div.header-content #social {
-		display: none !important;
-	}
-    .banner-textbox {
-        position: absolute;
-        color: #fff !important;
-        width: 100% !important;
-        bottom: 0px !important;
-        left: 0px !important;
-    }
-    .banner-textbox .heading {
-        font-weight: bold;
-        font-size: 1.4em !important;
-        display: block;
-        padding: 10px 10px 0px 10px !important;
-        background-color: rgba(0,0,0,0.8) !important	;
-    }
-    .banner-textbox .subheading {
-        font-size: 0.9em !important;
-        display: block;
-        padding: 10px;
-        background-color: rgba(0,0,0,0.8) !important;
-        margin-top:0px !important;
-    }
- }
 
-@media  (-webkit-min-device-pixel-ratio: 2),  
-             (min--moz-device-pixel-ratio: 2),  
-             (min-resolution: 300dpi), (max-width: 960px){
-    /* rules defined inside here are only applied to browsers that support CSS media queries and the browser window is 480px or smaller */
-	.header-content {
-		display: none;
-		
-	}
-	.nav-button {
-		display: block !important;	
-	}
-	.nav-button:active {
-		box-shadow: inset 0 0 15px #777;
-			
-	}
-	div#sidebar-wrap {
-		float: none !important;
-		min-height: 0px !important;
-		width: 100%;
-		background-color: rgba(255,255,255,0.95);
-		position:absolute;
-		top: 80px;
-		left: -20px;
-		z-index:50000;
-		display:none;
-		padding: 10px 0 10px 20px;
-		-webkit-box-sizing: border-box;
-		 -moz-box-sizing: border-box;
-			  box-sizing: border-box;
-	}
-	div#content {
-		margin-left: 20px !important;	
-		padding: 20px !important;
-		padding-top: 20px !important;
-		position:static;
-	}
-	#wrapper { 
-		width: 100% !important;
-	}
-	.banner-textbox {
-		position: absolute;
-		color: #fff !important;
-		width: 100% !important;
-		bottom: 0px !important;
-		left: 0px !important;
-	}
-	.banner-textbox .heading {
-		font-weight: bold;
-		font-size: 1.4em !important;
-		display: block;
-		padding: 10px 10px 0px 10px !important;
-		background-color: rgba(0,0,0,0.8) !important	;
-	}
-	.banner-textbox .subheading {
-		font-size: 0.9em !important;
-		display: block;
-		padding: 10px;
-		background-color: rgba(0,0,0,0.8) !important;
-		margin-top:0px !important;
-	}
- }
-@media (max-width: 640px){
-	div.site-logo {
-		width: 129px !important;
-		background: url(../images/logos/site-logo-light-tiny.png) white no-repeat center !important;
-	}
-	.header-logo {
-		width: 129px !important;
-		
-	}
-}
 

@@ -11,9 +11,10 @@
 
         <!-- Begin Stylesheets -->
         <link href="styles/fonts.css" rel="stylesheet" type="text/css" />
-        <link href="styles/main.css" rel="stylesheet" type="text/css" />        
+        <link href="styles/main.css" rel="stylesheet" type="text/css" />
         <link href="styles/layout.css" rel="stylesheet" type="text/css" />
         <link href="styles/banners.css" rel="stylesheet" type="text/css" />
+        <link href="styles/index.css" rel="stylesheet" type="text/css" />
         <link rel="shortcut icon" href="images/favicon/favicon_new2.ico" />
         <!-- End Stylesheets -->
         
@@ -58,7 +59,7 @@
 	<body>
     	<div id="wrapper">
         	
-            <div id="header-wrap" class="sticky">
+            <div id="header-wrap">
             	<div id="header">
                 	<!-- Header includes Company Logo and Navigation Bar -->
                     
@@ -103,61 +104,39 @@
                         
                     </div>
                     <a href="#" class="nav-button"><img src="images/Pace_Social_Icon_Set/PNG/navigation.png" /></a>
+
                 </div>
-            </div>
-            
-            <div id="fluff1"></div>
-        	<div id="banner-wrap">
-            <!--
-            	<div id="banner">
-                	<div id="banner-caption">
-                    	<h1><strong>Best. Summer. Ever.</strong></h1>
-                        <h2>Sign up for YSC's Spectacular Summer Camp today!</h2>
-                    </div>
-                	
-                </div>
-            -->
-            	<div id="banner">
-                	<!-- jQuery rslides Banner Slider plugin -->
-                    <ul class="rslides">
-                      <li>
-                      	<img src="images/banners/banner-1.jpg" alt="">
-                        <div class='banner-textbox' id="banner-1-text">
-                        	<span class="heading">Best. Summer. Ever.</span>
-                            <span class="subheading">Enroll your child in YSC's Summer Camp for an unforgetable summer experience.</span>
-                        </div>
-                      </li>
-                      <li><img src="images/banners/banner-2.jpg" alt="">
-                      <div class='banner-textbox' id="banner-2-text">
-                          <span class="heading">Make a Splash.</span>
-                          <span class="subheading">Sign up for our low-price summer swimming sessions today!</span>
-                      </div>
-                      </li>
-                      <li><img src="images/banners/banner-3.jpg" alt="">
-                      <div class='banner-textbox' id="banner-3-text">
-                          <span class="heading">One-on-One Attention.</span>
-                          <span class="subheading">With our tiny student-teacher ratios, your child gets individualized attention!</span>
-                      </div></li>
-                    </ul>
-                    <!-- END -- jQuery rslides Banner Slider plugin -->
-                </div>
-            </div>
-            <div id="content-wrap">
-                <div id="sidebar-wrap">
-                    <div id="sidebar">
-                        <h3>Navigation</h3>
+                <div id="navigation_wrap">
+                    <div id="navigation">
                         <a class="nav active" href="#">Home</a>
                         <a class="nav" href="#">About Us</a>
                         <a class="nav" href="#">Our Programs</a>
                         <a class="nav" href="#">Contact Us</a>
                     </div>
                 </div>
+            </div>
+
+            
+            <div id="fluff1"></div>
+
+            <div id="content-wrap">
             	<div id="content-inner-wrap">
+                	<!--
                 	<div id="content">
                         <!-- Main Page Content goes here -->
-                        <h3>Welcome</h3>
-                        <p>
-                        Welcome to Youth Skills Center, an Early Childhood Development Center located in Jurupa Valley, CA. We are a small, family-owned center with programs for children ages 2 - 14. We have a passion for teaching and believe children learn best in a comfortable, friendly environment. With a focus on technology, we make it a point to prepare your child for the world of tomorrow. At YSC, every program is of the&nbsp;highest quality&nbsp;without compromise in affordability.</p>
+                        <!--<h3>Welcome</h3>
+                        <p>Welcome to <strong><em>Youth Skills Center</em></strong>, an <strong>Early Childhood Development Center</strong> located in Jurupa Valley, CA. We are a small, family-owned center with programs for children ages 2 - 14. We have a passion for teaching and believe children learn best in a comfortable, friendly environment. With a focus on technology, we make it a point to prepare your child for the world of tomorrow. At YSC, every program is of the&nbsp;highest quality&nbsp;without compromise in affordability.</p>-->
+
+                        <!--
+                            <div class="program_card preschool">
+                                <span class="title">Preschool</span>
+                            </div>
+                        -->
+                    <!--
+                    </div>
+                    -->
+                    <div class="content-box">
+
                     </div>
                 </div>
             </div>
