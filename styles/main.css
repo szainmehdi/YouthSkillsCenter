@@ -53,11 +53,21 @@ ul {
 }
 a:link, a:visited {
 	color: #333;
-	text-decoration: none;	
+	text-decoration: none;
 }
 a:hover, a:active {
 	color: #f00;
-	text-decoration: none;	
+	text-decoration: none;
+}
+a.white:link, a.white:visited {
+    color: #333;
+    text-decoration: none;
+    border-bottom: 1px solid white;
+}
+a.white:hover, a.white:active {
+    text-decoration: none;
+    background-color: white;
+    color: #333 !important;
 }
 em {
     border-bottom: 1px solid red;

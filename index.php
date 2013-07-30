@@ -130,9 +130,32 @@
                     <div class="content-box" style="background-color: #1FCB4A;">
                         <div class="content-box-inner-wrap">
                             <h2 style="color: white;"><strong>Enroll Now</strong> for Preschool and Child Care!</h2>
+                            <p style="color: white">Now's the perfect time to enroll in our best-in-class programs, for every child between
+                            the ages of 2 and 14.</p>
+                            <p style="color: white; font-weight: 700"><a href="#contact" class="white" style="color: white">
+                                    Call us today</a> to lock in the best prices of the year for 12 months!
+                            </p>
                         </div>
                     </div>
-
+                    <div class="content-box">
+                        <div id="large_banner_test_01" class="banner_image" style="height: 400px;background-image: url(images/banners/child-hands_large.jpg);
+                        background-position: 150px -200px;">
+                            <div class="banner_content">
+                                <h1 style="background-color: rgba(255,8,123,0.84);color: white;margin-top: 120px;">
+                                    Unleash your child's potential.
+                                </h1>
+                                <p>
+                                    With the warm and welcoming environment at YSC, your child reach
+                                    their true potential. And with the best prices of the year, now is the best time to join!
+                                </p>
+                                <div class="action_button">
+                                    <div class="icon"></div>
+                                    Register Now!
+                                    <a href="#"><span class="full-box-link"></span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     <!-- FOOTER -->
                     <div id="footer-wrap">
                         <div id="footer">
