@@ -52,8 +52,8 @@
     </div>
     <div id="navigation_wrap">
         <div id="navigation">
-            <a class="nav <?php if($cfg['page'] == "home") { echo "active";} ?>" href="#">Home</a>
-            <a class="nav <?php if($cfg['page'] == "about") { echo "active";} ?>" href="#">About Us</a>
+            <a class="nav <?php if($cfg['page'] == "home") { echo "active";} ?>" href="index.php">Home</a>
+            <a class="nav <?php if($cfg['page'] == "about") { echo "active";} ?>" href="about.php">About Us</a>
             <a class="nav <?php if($cfg['page'] == "programs") { echo "active";} ?>" href="#">Our Programs</a>
             <a class="nav <?php if($cfg['page'] == "contact") { echo "active";} ?>" href="#">Contact Us</a>
         </div>

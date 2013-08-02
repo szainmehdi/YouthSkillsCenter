@@ -88,6 +88,15 @@ div.content-box.large-right {
     width: 791px;
 
 }
+div.content-box.small-right {
+    width: 424px;
+    margin-left: 10px;
+}
+div.content-box.large-left {
+    margin-right: 10px;
+    width: 791px;
+
+}
 div#footer-wrap {
 	width: 100%;
 	min-height:160px;

@@ -1,10 +1,15 @@
+<?php
+
+//this file is used to include the footer in all areas of the website.
+
+?>
 <!-- FOOTER -->
 <div id="footer-wrap">
     <div id="footer">
         <!-- copyright & related links go here -->
         <div class="footer-links" id="footer-links1">
             <h4>Information</h4>
-            <a class="fl" href="#">About YSC</a>
+            <a class="fl" href="about.php">About YSC</a>
             <a class="fl" href="#">Our Staff</a>
             <a class="fl" href="#">Our Facility</a>
             <h4>MyYSC</h4>
