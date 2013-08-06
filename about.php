@@ -1,5 +1,12 @@
 <?php
 $cfg['page'] = "about";
+$relative_path = $_SERVER['DOCUMENT_ROOT'];
+if(strstr($relative_path,"moo")) {
+    $relative_path .= "/sites/ysc/";
+}
+else {
+    $relative_path .= "/YouthSkillsCenter/";
+}
 ?>
 <!DOCTYPE html> <!-- HTML5 Document -->
 <!-- 
@@ -28,7 +35,7 @@ $cfg['page'] = "about";
 	<body>
     	<div id="wrapper">
         	
-        <?php require_once($_SERVER['DOCUMENT_ROOT'] . '/YouthSkillsCenter/includes/header.inc.php'); ?>
+        <?php require_once($relative_path . 'includes/header.inc.php'); ?>
 
             <div id="content-wrap">
             	<div id="content-inner-wrap">
@@ -53,26 +60,26 @@ $cfg['page'] = "about";
                     <div class="content-box large-left" style="background-color: #ff8100;">
                         <div class="content-box-inner-wrap">
                             <h2 style="color: white;"><strong>A Fresh Approach</strong> to Learning.</h2>
-                            <p style="color: white;font-size: 92%;">
+                            <p style="color: white;font-size: 94%;">
                                 Youth Skills Center is a new Early Childhood Development Center located in Jurupa Valley, CA.
                                 We are a small, family-owned center with programs for children ages 2 - 14.
                                 We have a passion for teaching and believe children learn best in a comfortable,
                                 friendly environment.
                             </p>
-                            <p style="color: white;font-size: 92%;">
+                            <p style="color: white;font-size: 94%;">
                                 With a focus on technology, we make it a point to prepare your
                                 child for the world of tomorrow. At YSC, every program is of the highest
                                 quality without compromise in affordability.</p>
-                            <p style="color: white;font-size: 92%;">
+                            <p style="color: white;font-size: 94%;">
                                 At YSC, we believe that learning isn't limited to the classroom. The learning experience
                                 at YSC extends beyond the four walls of the classroom, and our teachers seize every
                                 opportunity to enlighten and inspire the brilliant young minds.
                             </p>
-                            <p style="color: white;font-size: 92%;">
+                            <p style="color: white;font-size: 94%;">
                                 We offer many different programs to meet your specific needs. Our welcoming and dedicated
                                 staff is always there to help you, so don't hesitate to contact us and speak your mind.
                             </p>
-                            <p style="color: white;font-size: 92%;">
+                            <p style="color: white;font-size: 94%;">
                                 We offer different programs throughout the year, such as
                                 <ul style="color: white;font-size: 92%;">
                                     <li>Year-round standards-based preschool.</li>
@@ -144,7 +151,7 @@ $cfg['page'] = "about";
                         </div>
                     </div>
 
-                    <?php require_once($_SERVER['DOCUMENT_ROOT'] . '/YouthSkillsCenter/includes/footer.inc.php'); ?>
+                    <?php require_once($relative_path . 'includes/footer.inc.php'); ?>
                 </div>
             </div>
 

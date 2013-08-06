@@ -1,5 +1,12 @@
 <?php
 $cfg['page'] = "home";
+$relative_path = $_SERVER['DOCUMENT_ROOT'];
+if(strstr($relative_path,"moo")) {
+    $relative_path .= "/sites/ysc/";
+}
+else {
+    $relative_path .= "/YouthSkillsCenter/";
+}
 ?>
 <!DOCTYPE html> <!-- HTML5 Document -->
 <!-- 
@@ -28,7 +35,7 @@ $cfg['page'] = "home";
 	<body>
     	<div id="wrapper">
         	
-        <?php require_once($_SERVER['DOCUMENT_ROOT'] . '/YouthSkillsCenter/includes/header.inc.php'); ?>
+        <?php require_once($relative_path. 'includes/header.inc.php'); ?>
 
             <div id="content-wrap">
             	<div id="content-inner-wrap">
@@ -53,7 +60,15 @@ $cfg['page'] = "home";
                     </div>
                     <div class="content-box small-left">
                         <div class="content-box-inner-wrap">
-                            <h2 style="color: #ff6b03;"><strong>New</strong> at YSC</h2>
+                            <h2 style="color: #ff6b03;"><strong>Important Dates</strong></h2>
+                            <p>
+                                <strong>Aug. 6</strong> &mdash; Ms. Zainab's Birthday!<br />
+                                <strong>Aug. 8</strong> &mdash; Eid-ul-Fitr<br />
+                                <strong>Aug. 12</strong> &mdash; First Day of School - YSC Academy<br />
+                                <strong>Aug. 21</strong> &mdash; Senior Citizens' Day<br />
+                                <strong>Sep. 2</strong> &mdash; Labor Day<br />
+                                <strong>Sep. 14</strong> &mdash; Yom Kippur
+                            </p>
                         </div>
                     </div>
                     <div class="content-box large-right" style="background-color: #9669FE;">
@@ -102,7 +117,7 @@ $cfg['page'] = "home";
                         </div>
                     </div>
 
-                    <?php require_once($_SERVER['DOCUMENT_ROOT'] . '/YouthSkillsCenter/includes/footer.inc.php'); ?>
+                    <?php require_once($relative_path . 'includes/footer.inc.php'); ?>
                 </div>
             </div>
 
