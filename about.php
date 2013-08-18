@@ -17,7 +17,7 @@ else {
 -->
 <html>
 	<head>
-    	<title>About Us | Youth Skills Center - A Preschool & Childcare Center in Riverside, CA</title>
+    	<title>About Us | Youth Skills Center - A Preschool & Childcare Center in Riverside, CA | Serving Children Ages 2-14</title>
 
         <!-- Begin Stylesheets -->
         <link href="styles/fonts.css" rel="stylesheet" type="text/css" />
@@ -50,9 +50,9 @@ else {
                                     find out about our programs, call us today.
                                 </p>
                                 <div class="action_button">
-                                    <div class="icon"></div>
-                                    Call Now!
-                                    <a href="tel:9516812972"><span class="full-box-link"></span></a>
+                                    <div class="icon call"></div>
+                                    Call Us Now!
+                                    <a href="contact.php"><span class="full-box-link"></span></a>
                                 </div>
                             </div>
                         </div>
@@ -150,7 +150,27 @@ else {
                             </div>
                         </div>
                     </div>
-
+                    <div class="content-box" style="background-color: #d66db2;">
+                        <div class="content-box-inner-wrap">
+                            <h2 style="background: white;color: #d66db2; padding: 10px;display: inline-block;font-size: 3.0em;text-transform: none">Our <strong>Objectives</strong></h2>
+                            <p style="color: white;">
+                                The idea behind Youth Skills Center is simple: to provide a <strong>safe</strong>,
+                                <strong>secure</strong>, <strong>sanitary</strong>, and <strong>enjoyable </strong>
+                                <strong>learning environment</strong> for the youth of our community. The objectives go
+                                a little beyond that, though. Our objectives are:
+                            </p>
+                            <ul style="color:white">
+                                <li>To keep your child <strong>physically active</strong>.</li>
+                                <li>To keep your child <strong>educationally advanced.</strong></li>
+                                <li>To keep your child <strong>socially fit.</strong></li>
+                                <li>To keep your child <strong>mentally strong.</strong></li>
+                            </ul>
+                            <p style="color: #ffffff">
+                                But most of all, we, at YSC, make every effort to<strong> put a smile</strong> on
+                                <em>your</em>&nbsp;child's face.
+                            </p>
+                        </div>
+                    </div>
                     <?php require_once($relative_path . 'includes/footer.inc.php'); ?>
                 </div>
             </div>

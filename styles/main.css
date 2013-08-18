@@ -70,8 +70,8 @@ a.white:hover, a.white:active {
     color: #333 !important;
 }
 em {
-    border-bottom: 1px solid red;
-    font-style: normal;
+    /*border-bottom: 1px solid red;*/
+    font-style: italic;
 }
 
 /***
@@ -280,7 +280,50 @@ div.banner_content .action_button .icon {
     top: 0;
 
 }
+div.banner_content .action_button .icon.call {
+    background-image: url(../images/icons/10_device_access_call.png);
+}
 div.banner_content .action_button:hover {
     background-color: rgba(255, 255, 255, 0.90);
     color: rgb(0, 191, 23);
+}
+
+
+
+
+
+
+
+/**
+
+
+
+**/
+#contact_form {
+    text-align: center;
+}
+#contact_form .light_text_input {
+    padding: 10px;
+    width: 300px;
+    text-align: center;
+    outline-color: teal;
+    display: block;
+    margin: 5px auto;
+}
+#contact_form input[type=submit] {
+    width: 322px;
+    background: white;
+    border: 2px solid teal;
+    font-family: CenturyGothic,sans-serif;
+    color: teal;
+    font-weight: bold;
+    font-size: 95%;
+    cursor: pointer;
+}
+
+#contact_form input[type=submit]:hover {
+    background-color: #cbffe1;
+}
+.content-box small {
+    display:none;
 }

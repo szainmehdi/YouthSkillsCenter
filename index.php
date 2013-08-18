@@ -17,7 +17,7 @@ else {
 -->
 <html>
 	<head>
-    	<title>Home | Youth Skills Center - A Preschool & Childcare Center in Riverside, CA</title>
+    	<title>Home | Youth Skills Center - A Preschool & Childcare Center in Riverside, CA | Serving Children Ages 2-14</title>
 
         <!-- Begin Stylesheets -->
         <link href="styles/fonts.css" rel="stylesheet" type="text/css" />
@@ -51,9 +51,9 @@ else {
                                     their true potential. And with the best prices of the year, now is the best time to join!
                                 </p>
                                 <div class="action_button">
-                                    <div class="icon"></div>
-                                    Register Now!
-                                    <a href="#"><span class="full-box-link"></span></a>
+                                    <div class="icon call"></div>
+                                    Call Us Now!
+                                    <a href="contact.php"><span class="full-box-link"></span></a>
                                 </div>
                             </div>
                         </div>
@@ -62,12 +62,13 @@ else {
                         <div class="content-box-inner-wrap">
                             <h2 style="color: #ff6b03;"><strong>Important Dates</strong></h2>
                             <p>
-                                <strong>Aug. 6</strong> &mdash; Ms. Zainab's Birthday!<br />
-                                <strong>Aug. 8</strong> &mdash; Eid-ul-Fitr<br />
-                                <strong>Aug. 12</strong> &mdash; First Day of School - YSC Academy<br />
                                 <strong>Aug. 21</strong> &mdash; Senior Citizens' Day<br />
                                 <strong>Sep. 2</strong> &mdash; Labor Day<br />
-                                <strong>Sep. 14</strong> &mdash; Yom Kippur
+                                <strong>Sep. 8</strong> &mdash; National Grandparents Day<br />
+                                <strong>Sep. 14</strong> &mdash; Yom Kippur<br />
+                                <strong>Sep. 17</strong> &mdash; Constitution Day<br />
+                                <strong>Oct. 7</strong> &mdash; Child Health Day<br />
+                                <strong>Oct. 14</strong> &mdash; Columbus Day<br />
                             </p>
                         </div>
                     </div>

@@ -55,7 +55,7 @@
             <a class="nav <?php if($cfg['page'] == "home") { echo "active";} ?>" href="index.php">Home</a>
             <a class="nav <?php if($cfg['page'] == "about") { echo "active";} ?>" href="about.php">About Us</a>
             <a class="nav <?php if($cfg['page'] == "programs") { echo "active";} ?>" href="#">Our Programs</a>
-            <a class="nav <?php if($cfg['page'] == "contact") { echo "active";} ?>" href="#">Contact Us</a>
+            <a class="nav <?php if($cfg['page'] == "contact") { echo "active";} ?>" href="contact.php">Contact Us</a>
         </div>
     </div>
 </div>
