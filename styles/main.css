@@ -69,11 +69,23 @@ a.white:hover, a.white:active {
     background-color: white;
     color: #333 !important;
 }
+.link_sub {
+    font-size: 72%;
+    color: #777;
+    font-weight: 300;
+}
+.navigation_link:link {
+    color: #007fff;
+    font-weight: 400;
+}
 em {
     /*border-bottom: 1px solid red;*/
     font-style: italic;
 }
-
+.quick_facts strong{
+    width: 150px;
+    display: inline-block;
+}
 /***
  *     __   __  _______  _______  ______   _______  ______      _______  _______  __   __  ___      _______  _______
  *    |  | |  ||       ||   _   ||      | |       ||    _ |    |       ||       ||  | |  ||   |    |       ||       |
@@ -282,6 +294,9 @@ div.banner_content .action_button .icon {
 }
 div.banner_content .action_button .icon.call {
     background-image: url(../images/icons/10_device_access_call.png);
+}
+div.banner_content .action_button .icon.scrollDown {
+    background-image: url(../images/icons/1_navigation_expand.png);
 }
 div.banner_content .action_button:hover {
     background-color: rgba(255, 255, 255, 0.90);
