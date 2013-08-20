@@ -31,12 +31,11 @@ h2 {
     text-transform: uppercase;
 }
 h3 {
-	font-family: CenturyGothic, Arial, Helvetica, sans-serif;
+	font-family: "Roboto Slab";
 	font-size: 160%;
-	font-weight: normal;
+	font-weight: 400;
 	color: #333;	
-	margin: 0;
-	margin-bottom: 10px;
+	margin: 12px 0;
 }
 p {
     font-family: "Roboto Slab", serif;
@@ -74,6 +73,20 @@ a.white:hover, a.white:active {
     color: #777;
     font-weight: 300;
 }
+.quote {
+    font-family: 'La Belle Aurore', cursive;
+    font-size: 1.8em;
+    padding: 15px;
+    line-height: 1.2em;
+}
+.quote-attr {
+    display: block;
+    font-family: "Roboto Slab";
+    font-weight: 300;
+    font-size: 14px;
+    text-align: right;
+    margin-right: 15px;
+}
 .navigation_link:link {
     color: #007fff;
     font-weight: 400;
@@ -82,9 +95,24 @@ em {
     /*border-bottom: 1px solid red;*/
     font-style: italic;
 }
+blockquote {
+    font-family: "Roboto Slab";
+    font-weight: 300;
+    color: #555;
+    padding: 10px;
+    border-left: 1px solid red;
+    background-color: #efefef;
+}
 .quick_facts strong{
     width: 150px;
     display: inline-block;
+}
+hr {
+    border: 0;
+    height: 1px;
+    background-color: #ddd;
+    color: #ddd;
+    width: 75%;
 }
 /***
  *     __   __  _______  _______  ______   _______  ______      _______  _______  __   __  ___      _______  _______
@@ -201,6 +229,10 @@ em {
  *    |   |    |       ||       |  |   |  |   |___ |   |  | |   _____| |  |   |    |   |  |       ||   |___  _____| |
  *    |___|    |_______||_______|  |___|  |_______||___|  |_|  |_______|  |___|    |___|  |_______||_______||_______|
  */
+
+div#footer-wrap {
+    clear: both;
+}
 div.footer-links h4 {
 	margin: 10px 0;
 	color: #eee;
