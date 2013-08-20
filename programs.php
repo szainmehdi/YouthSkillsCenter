@@ -180,7 +180,7 @@ else {
                                 truly believe we can make a difference in your child's education.</strong>
                             </p>
                             <hr />
-                            <p style="font-weight: 400">
+                            <p style="font-weight: 400; color: #74ae00">
                                 We believe we have a lot to offer in our preschool programs. <strong>No matter the schedule, no
                                 matter the budget, we can work with you! </strong>Give us a call today to see how your can take
                                 advantage of tuition lower than ever before.
@@ -199,7 +199,7 @@ else {
                                         HighScope
                                     </a>
                                 <br />
-                                <strong>Ratio</strong> 1 teacher to 12 children<br />
+                                <strong>Max. Ratio</strong> 1 teacher to 12 children<br />
                                 <strong>Tuition</strong> (Call for details)
                             </p>
                         </div>
@@ -229,7 +229,123 @@ else {
                                 Our teachers and staff at YSC are caring and devoted to making a difference in your
                                 child's life. <strong>Everyone here &mdash; from the bus driver to the teacher, the receptionist to
                                 the director &mdash; is truly dedicated to their task and takes their responsibilities as
-                                a role model seriously.</strong>
+                                a role model seriously.</strong> And that really makes all the difference in the world.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="content-box">
+                        <div id="large_banner_test_01" class="banner_image" style="height: 800px;background-image: url(images/banners/homework.jpg);">
+                            <div class="banner_content">
+                                <h1 style="background-color: rgba(227,60,94,0.80);color: white;margin-top: 380px;margin-left: 90px;">
+                                    School Age Care
+                                </h1>
+                                <p style="width: 490px; color: white;background-color: rgba(0,120,195,0.80);margin-left: 150px;">
+                                    With ultra-low student to teacher ratios, your children can get the attention they
+                                    deserve in our focused, technology-enhanced before and after school programs.
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content-box large-right" style="float: right">
+                        <div class="content-box-inner-wrap">
+                            <h2 style="color: rgb(227,60,94);text-transform: none;"><strong>YSC School Age Care.</strong> Focused. Fruitful. </h2>
+                            <p>
+                                Our preschool program at Youth Skills Center employs the <strong>HighScope Curriculum</strong>
+                                for an interactive and hands on learning approach. Every hour is filled with fresh, new learning
+                                experiences, building a strong and thorough foundation for the future of your child's
+                                education. <strong>But our work goes above and beyond "kindergarten readiness."</strong>
+                                YSC Preschool uses methods that help build and promote curiosity, creativity, cooperation, independence,
+                                and more.
+                            </p>
+                            <h3>The HighScope Curriculum</h3>
+                            <p>
+                                The HighScope Preschool Curriculum is an integral part of our approach to learning. It is
+                                a comprehensive curriculum, with learning focused on eight key content areas. The
+                                philosophy behind this curriculum is intriguing and we truly feel that this is the
+                                best approach to develop healthy, creative, independent, and bright students. After all,
+                                <em>"today's children are tomorrow's leaders!"</em> HighScope does a great job detailing
+                                the effects and benefits of their preschool curriculum:
+                            </p>
+                            <blockquote>
+                                Beginning with the
+                                <a href="http://www.highscope.org/Content.asp?ContentId=219" target="_blank">
+                                    Perry Preschool Study,
+                                </a>
+                                HighScope revolutionized early childhood education with a new approach to teaching and
+                                learning. Research based and child focused, the HighScope Curriculum uses a carefully
+                                designed process &mdash; called "active participatory learning" &mdash; to achieve
+                                powerful, positive outcomes.
+                            </blockquote>
+                            <p>
+                                <a href="http://www.highscope.org/Content.asp?ContentId=746" target="_blank" style="color: #74ae00">
+                                    Learn more about the <strong>HighScope Preschool Curriculum</strong> here...
+                                </a>
+                            </p>
+                            <h3>An Active, Engaging Schedule</h3>
+                            <p>
+                                With the HighScope curriculum as the backbone of our program, we take a fresh approach
+                                to the way we spend our time with your child. <strong>Our schedule focuses on creative learning
+                                    activities, stresses the importance of play, and maintains a healthy level of physical
+                                    activity.</strong> In fact, during the summer, all of our preschool children also have the option
+                                to swim daily, under the supervision and instruction of a certified swim instructor or
+                                lifeguard.
+                            </p>
+                            <p>
+                                Our schedule also takes into account your hectic, varying work hours and other arrangements.
+                                Our mornings, like most others', are filled with new content and reinforcement of old
+                                concepts; likewise, our teachers review and strengthen the same content in the afternoon
+                                as well! This allows for an effective part time program, with both morning and afternoon
+                                programs rich in educational content, and an unrivaled full day program, allowing our
+                                teachers additional time to review and reinforce the daily concepts and material. <strong>We
+                                    truly believe we can make a difference in your child's education.</strong>
+                            </p>
+                            <hr />
+                            <p style="font-weight: 400; color: #74ae00">
+                                We believe we have a lot to offer in our preschool programs. <strong>No matter the schedule, no
+                                    matter the budget, we can work with you! </strong>Give us a call today to see how your can take
+                                advantage of tuition lower than ever before.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="content-box small-left" style="background-color: white;">
+                        <div class="content-box-inner-wrap">
+                            <h2 style="color: #ff6900;">Quick Facts</h2>
+                            <p class="quick_facts" style="line-height: 1.6em;">
+                                <strong>Ages</strong> 5&mdash;14<br />
+                                <strong>Grades</strong> Kindergarten thru 8th
+                                <strong>Hours</strong> 6:00am &mdash; 6:00pm<br />
+                                <strong>Max. Ratio</strong> 1 teacher to 10 children<br />
+                                <strong>Tuition</strong> (Call for details)
+                            </p>
+                        </div>
+                    </div>
+                    <div class="content-box small-left" style="background-color: white;">
+                        <div class="content-box-inner-wrap">
+                            <h2 style="color: #00ca96;">Inspiration</h2>
+                            <p>
+                                At YSC, we take inspiration from anyone, anywhere. Here is one of our favorite
+                                inspirational quotes from famous personalities.
+                            </p>
+                            <p class="quote">
+                                "Children are great imitators. So give them something great to imitate."
+                                <span class="quote-attr">&mdash; Anonymous</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="content-box small-left" style="background-color: white;">
+                        <div class="content-box-inner-wrap">
+                            <h2 style="color: #9a63ca;">The Role of Teachers</h2>
+                            <p>
+                                Undoubtedly, teachers are second most prominent figures in a preschool child's life. A
+                                large portion the child's time is spent with their teacher in school, so the <strong>importance
+                                    of good, caring, "intentional" teachers cannot be stressed enough.</strong>
+                            </p>
+                            <p>
+                                Our teachers and staff at YSC are caring and devoted to making a difference in your
+                                child's life. <strong>Everyone here &mdash; from the bus driver to the teacher, the receptionist to
+                                    the director &mdash; is truly dedicated to their task and takes their responsibilities as
+                                    a role model seriously.</strong> And that really makes all the difference in the world.
                             </p>
                         </div>
                     </div>
