@@ -32,6 +32,21 @@ else {
 
     <!-- jQuery Plugins -->
     <script src="functions/jquery.min.js"></script>
+
+    <!-- Page-Specific Javascript -->
+    <script>
+        $(document).ready(function (){
+            $(".scrollTo").click(function (e){
+                e.preventDefault();
+                //$(this).animate(function(){
+                var elem = "#" + $(this).attr("elem");
+                $('html, body').animate({
+                    scrollTop: ($(elem).offset().top - 158)
+                }, 500);
+                //});
+            });
+        });
+    </script>
 </head>
 <body>
 <div id="wrapper">
@@ -54,7 +69,7 @@ else {
             <div class="action_button" style="margin-top: 140px;">
                 <div class="icon scrollDown"></div>
                 Scroll Down
-                <a href="#"><span class="full-box-link"></span></a>
+                <a href="#" class="scrollTo" elem="aboutOurPrograms"><span class="full-box-link"></span></a>
             </div>
         </div>
     </div>
@@ -67,13 +82,13 @@ else {
         </p>
         <ul>
             <li>
-                <a href="#preschool" class="navigation_link">Preschool</a>
+                <a href="#preschool" class="scrollTo" elem="preschool" class="navigation_link">Preschool</a>
                 <br />
                                     <span class="link_sub">Full day or half day preschool program for all children between
                                         the ages of 2 and 5</span>
             </li>
             <li>
-                <a href="#schoolage" class="navigation_link">School Age Care</a>
+                <a href="#schoolage" class="scrollTo" elem="schoolage" class="navigation_link">School Age Care</a>
                 <br />
                 <span class="link_sub">Before and after school care with homework help and transportation</span>
             </li>
@@ -92,7 +107,7 @@ else {
 </div>
 <div class="content-box large-right">
     <div class="content-box-inner-wrap">
-        <h2 style="color: #74ae00;">About Our Programs</h2>
+        <h2 style="color: #74ae00;" id="aboutOurPrograms">About Our Programs</h2>
         <p>
             At Youth Skills Center, we put your child above everything else. We do only what's
             best for the students, and <strong>every hour at YSC is filled with enjoyable learning
@@ -119,7 +134,7 @@ PRESCHOOL
 
 -->
 
-<div class="content-box">
+<div class="content-box" id="preschool">
     <div id="large_banner_test_01" class="banner_image" style="height: 800px;background-image: url(images/banners/Preschool_l.jpg);">
         <div class="banner_content">
             <h1 style="background-color: rgba(103,96,104,0.80);color: white;margin-top: 380px;margin-left: 590px;">
@@ -265,7 +280,7 @@ SCHOOL AGE CARE
 
 -->
 
-<div class="content-box">
+<div class="content-box" id="schoolage">
     <div id="large_banner_test_01" class="banner_image" style="height: 800px;background-image: url(images/banners/homework.jpg);">
         <div class="banner_content">
             <h1 style="background-color: rgba(227,60,94,0.80);color: white;margin-top: 380px;margin-left: 90px;">
