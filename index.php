@@ -90,7 +90,7 @@ else {
                     <div class="content-box">
                         <div id="large_banner_test_01" class="banner_image" style="height: 300px;background-image: url(images/banners/gift_cards_promo.jpg)">
                             <div class="banner_content">
-                                <h1 style="background-color: rgb(255,155,26);color: white;margin-top: 10px;">
+                                <h1 style="background-color: rgb(255,155,26);color: white;margin-top: -10px;">
                                     Refer a student. Get $20.
                                 </h1>
                                 <p style="background-color: rgb(85,191,243);color: white;">
