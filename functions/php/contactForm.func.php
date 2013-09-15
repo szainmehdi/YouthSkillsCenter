@@ -10,9 +10,8 @@ Name: $_REQUEST[name] <br>
 Email: $_REQUEST[email] <br>
 Phone: $_REQUEST[phone] <br>
 EOD;
-$headers = 'From: no-reply@ysc5.com' . "\r\n" .
-    'Reply-To: no-reply@ysc5.com' . "\r\n" .
-    'X-Mailer: PHP/' . phpversion();
+$headers = 'From: YouthSkillsCenter.com <no-reply@ysc5.com>' . "\r\n" .
+    'Reply-To: no-reply@ysc5.com';
 
 
 //$message = wordwrap($message, 70, "\r\n");
