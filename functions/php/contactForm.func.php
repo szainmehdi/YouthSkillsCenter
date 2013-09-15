@@ -11,7 +11,9 @@ Email: $_REQUEST[email] <br>
 Phone: $_REQUEST[phone] <br>
 EOD;
 $headers = 'From: YouthSkillsCenter.com <no-reply@ysc5.com>' . "\r\n" .
-    'Reply-To: no-reply@ysc5.com';
+    'Reply-To: no-reply@ysc5.com' .
+    "MIME-Version: 1.0\r\n" .
+    "Content-Type: text/html; charset=ISO-8859-1\r\n";
 
 
 //$message = wordwrap($message, 70, "\r\n");
