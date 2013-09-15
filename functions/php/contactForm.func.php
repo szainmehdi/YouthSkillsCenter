@@ -16,7 +16,7 @@ $headers = 'From: no-reply@ysc5.com' . "\r\n" .
     'X-Mailer: PHP/' . phpversion();
 
 
-$message = wordwrap($message, 70, "\r\n");
+//$message = wordwrap($message, 70, "\r\n");
 
 
 mail($to, $subject, $message, $headers);
