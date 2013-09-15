@@ -3,14 +3,13 @@
 
 $to      = "zm@ysc5.com";
 $subject = '[YSC Website] New Form Submission';
-$message = 'Hello, you\'ve received a new submission from the contact form at http://ysc5.com. Here are the details.';
-$message.= '<br /><br />';
-$message.= 'Name: ' . $_REQUEST['name'];
-$message.= '<br />';
-$message.= 'Email: ' . $_REQUEST['email'];
-$message.= '<br />';
-$message.= 'Phone: ' . $_REQUEST['phone'];
-$message.= '<br />';
+$body = <<<EOD
+Hello, you've received a new submission from the contact form at http://ysc5.com. Here are the details.
+<br><hr><br>
+Name: $_REQUEST[name] <br>
+Email: $_REQUEST[email] <br>
+Phone: $_REQUEST[phone] <br>
+EOD;
 $headers = 'From: no-reply@ysc5.com' . "\r\n" .
     'Reply-To: no-reply@ysc5.com' . "\r\n" .
     'X-Mailer: PHP/' . phpversion();
@@ -19,7 +18,7 @@ $headers = 'From: no-reply@ysc5.com' . "\r\n" .
 //$message = wordwrap($message, 70, "\r\n");
 
 
-mail($to, $subject, $message, $headers);
+mail($to, $subject, $body, $headers);
 
 $cfg['page'] = "contact";
 $relative_path = $_SERVER['DOCUMENT_ROOT'];
