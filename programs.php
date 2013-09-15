@@ -49,6 +49,7 @@ else {
     </script>
 </head>
 <body>
+<?php include_once("includes/plugins/analytics.php") ?>
 <div id="wrapper">
 
 <?php require_once($relative_path . 'includes/header.inc.php'); ?>
