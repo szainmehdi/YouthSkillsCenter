@@ -58,17 +58,15 @@ else {
                             </div>
                         </div>
                     </div>
-                    <div class="content-box small-left">
+                    <div class="content-box small-left" style="background-color: white;">
                         <div class="content-box-inner-wrap">
-                            <h2 style="color: #ff6b03;"><strong>Important Dates</strong></h2>
+                            <h2 style="color: #27ca00;">Unbeatable Pricing</h2>
                             <p>
-                                <strong>Aug. 21</strong> &mdash; Senior Citizens' Day<br />
-                                <strong>Sep. 2</strong> &mdash; Labor Day<br />
-                                <strong>Sep. 8</strong> &mdash; National Grandparents Day<br />
-                                <strong>Sep. 14</strong> &mdash; Yom Kippur<br />
-                                <strong>Sep. 17</strong> &mdash; Constitution Day<br />
-                                <strong>Oct. 7</strong> &mdash; Child Health Day<br />
-                                <strong>Oct. 14</strong> &mdash; Columbus Day<br />
+                                We mean it: we're committed to bringing you the <strong>best prices possible for preschool and childcare.</strong> We think
+                                our prices are lower than any other center in the area, but <strong>if you can find a better price, we'll match it!</strong>*
+                            </p>
+                            <p class='legal' style="color: #888;">
+                                *Restriction apply. Call 951.681.2972 for details. For new enrollments only.
                             </p>
                         </div>
                     </div>
@@ -90,34 +88,60 @@ else {
                         </div>
                     </div>
                     <div class="content-box">
-                        <div id="large_banner_test_01" class="banner_image" style="height: 400px;background-image: url(images/banners/banner-1.jpg)">
+                        <div id="large_banner_test_01" class="banner_image" style="height: 300px;background-image: url(images/banners/gift_cards_promo.jpg)">
                             <div class="banner_content">
-                                <h1 style="background-color: rgba(98, 169, 255, 0.86);color: white;margin-top: 120px;">
-                                    Best. Summer. Ever.
+                                <h1 style="background-color: rgb(255,155,26);color: white;margin-top: 10px;">
+                                    Refer a student. Get $20.
                                 </h1>
-                                <p>
-                                    Enroll now in YSC's 10 week Summer Camp program for the
-                                    most enjoyable learning experience.
+                                <p style="background-color: rgb(85,191,243);color: white;">
+                                    Now through October 31, 2013, get a $20 VISA Gift card for each student that registers
+                                    at Youth Skills Center with your referral! <br />
+                                    <span class="legal">Offer valid while supplies last. See YSC staff for details.</span>
                                 </p>
-                                <div class="action_button">
-                                    <div class="icon"></div>
-                                    Register Now!
-                                    <a href="#"><span class="full-box-link"></span></a>
-                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="content-box" style="background-color: #1FCB4A;">
+                    <div class="content-box large-left" style="background-color: #1FCB4A;">
                         <div class="content-box-inner-wrap">
-                            <h2 style="color: white;"><strong>Enroll Now</strong> for Preschool and Child Care!</h2>
+                            <h2 style="color: white;"><strong>Best Prices of the Year </strong> for Preschool!</h2>
                             <p style="color: white">Now's the perfect time to enroll in our best-in-class programs, for every child between
-                            the ages of 2 and 14.</p>
+                            the ages of 2 and 14. Lock in the best promotional rate for our preschool program before October 31!</p>
                             <p style="color: white; font-weight: 700"><a href="#contact" class="white" style="color: white">
-                                    Call us today</a> to lock in the best prices of the year for 12 months!
+                                    Call us today</a> to for more information!
                             </p>
                         </div>
                     </div>
-
+                    <div class="content-box small-right" style="background-color: white;">
+                        <div class="content-box-inner-wrap">
+                            <h2 style="color: #ff6900;">Quick Links</h2>
+                            <p>
+                                Jump directly to a program.
+                            </p>
+                            <ul>
+                                <li>
+                                    <a href="#preschool" class="navigation_link">Preschool</a>
+                                    <br />
+                                    <span class="link_sub">Full day or half day preschool program for all children between
+                                        the ages of 2 and 5</span>
+                                </li>
+                                <li>
+                                    <a href="#schoolage" class="navigation_link">School Age Care</a>
+                                    <br />
+                                    <span class="link_sub">Before and after school care with homework help and transportation</span>
+                                </li>
+                                <!--<li>
+                                    <a href="#yscacademy" class="navigation_link">YSC Academy</a>
+                                    <br />
+                                    <span class="link_sub">Kindergarten &mdash; 3rd grade technology-enhanced charter school</span>
+                                </li>
+                                <li>
+                                    <a href="#swimming" class="navigation_link">Swimming</a>
+                                    <br />
+                                    <span class="link_sub">Year-round swimming lessons in our outdoor heated pool</span>
+                                </li>-->
+                            </ul>
+                        </div>
+                    </div>
                     <?php require_once($relative_path . 'includes/footer.inc.php'); ?>
                 </div>
             </div>
