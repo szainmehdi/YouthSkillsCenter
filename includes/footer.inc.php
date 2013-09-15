@@ -19,8 +19,8 @@
         </div>
         <div class="footer-links" id="footer-links2">
             <h4>Site Info</h4>
-            <a class="fl" href="#">Privacy Policy</a>
-            <a class="fl" href="#">Terms of Service</a>
+            <a class="fl" href="privacy.php">Privacy Policy</a>
+            <!--<a class="fl" href="#">Terms of Service</a>-->
             <!--<a class="fl" href="#">Feedback</a>-->
             <h4>Resources</h4>
             <a class="fl" href="http://www.abcya.com/" target="_blank">ABCya.com Games</a>
