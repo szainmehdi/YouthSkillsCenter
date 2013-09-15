@@ -30,7 +30,7 @@ else {
         <!-- End Stylesheets -->
         
         <!-- jQuery Plugins -->
-        <script src="functions/jquery.min.js"></script>
+        <script src="functions/js/jquery.min.js"></script>
     </head>
 	<body>
     	<div id="wrapper">

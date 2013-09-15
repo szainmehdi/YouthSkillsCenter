@@ -30,7 +30,7 @@ else {
         <!-- End Stylesheets -->
         
         <!-- jQuery Plugins -->
-        <script src="functions/jquery.min.js"></script>
+        <script src="functions/js/jquery.min.js"></script>
     </head>
 	<body>
     	<div id="wrapper">
@@ -119,13 +119,13 @@ else {
                             </p>
                             <ul>
                                 <li>
-                                    <a href="#preschool" class="navigation_link">Preschool</a>
+                                    <a href="programs.php#preschool" class="navigation_link">Preschool</a>
                                     <br />
                                     <span class="link_sub">Full day or half day preschool program for all children between
                                         the ages of 2 and 5</span>
                                 </li>
                                 <li>
-                                    <a href="#schoolage" class="navigation_link">School Age Care</a>
+                                    <a href="programs.php#schoolage" class="navigation_link">School Age Care</a>
                                     <br />
                                     <span class="link_sub">Before and after school care with homework help and transportation</span>
                                 </li>

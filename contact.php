@@ -27,12 +27,49 @@ else {
         <link href="styles/index.css" rel="stylesheet" type="text/css" />
         <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,700,300' rel='stylesheet' type='text/css'>
         <link rel="shortcut icon" href="images/favicon/favicon_new2.ico" />
+        <style>
+            #contact_form.submitted {
+                height: 140px;
+                width: 140px;
+                background-color: white;
+                /*padding: 50px;*/
+                background-image: url(images/ux/confirmation.png);
+                background-repeat: no-repeat;
+                background-position: center;
+                text-align: center;
+                font-size: 90%;
+                margin: 0 auto;
+                border-radius: 70px;;
+            }
+        </style>
         <!-- End Stylesheets -->
         
         <!-- jQuery Plugins -->
-        <script src="functions/jquery.min.js"></script>
-        <script type="text/javascript"
-                src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDtAZdlRb76tUfc9zVsnXTHv10fKcfsgcY&sensor=false">
+        <script src="functions/js/jquery.min.js"></script>
+
+        <!-- Page-Specific Javascript -->
+        <script>
+            /* attach a submit handler to the form */
+            $(function() {
+                $("#contactForm").submit(function(event) {
+
+                    /*stop form from submitting normally*/
+                    event.preventDefault();
+
+                    /*get some values from elements on the page:*/
+                    var $form = $( this ),
+                        data=$(this).serialize(),
+                        url = $form.attr( 'action' );
+
+                    /*Send the data using post*/
+                    var posting = $.post( url, data );
+
+                    /* Put the results in a div*/
+                    posting.done(function( data ) {
+                        $form.fadeOut(250).parent().addClass("submitted");
+                    });
+                });
+            });
         </script>
     </head>
 	<body>
@@ -85,10 +122,12 @@ else {
                                 Just fill out the short form below and we'll do our best to call you back at the requested time.
                             </p>
                             <div id="contact_form">
-                                <input class="light_text_input" type="text" placeholder="Name" />
-                                <input class="light_text_input" type="email" placeholder="Email" />
-                                <input class="light_text_input" type="phone" placeholder="Phone" />
-                                <input class="light_text_input" type="submit" value="Submit" />
+                                <form action="functions/php/contactForm.func.php" id="contactForm">
+                                    <input class="light_text_input" name="name" type="text" placeholder="Name" />
+                                    <input class="light_text_input" name="email" type="email" placeholder="Email" />
+                                    <input class="light_text_input" name="phone" type="phone" placeholder="Phone" />
+                                    <input class="light_text_input" name="submit" type="submit" value="Submit" />
+                                </form>
                             </div>
                         </div>
                     </div>
