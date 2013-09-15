@@ -25,7 +25,7 @@
             <h4>Resources</h4>
             <a class="fl" href="http://www.abcya.com/" target="_blank">ABCya.com Games</a>
             <a class="fl" href="http://www.multiplication.com/games" target="_blank">Multiplication.com Games</a>
-            <a class="fl" href="#"><em>more</em></a>
+            <!--<a class="fl" href="#"><em>more</em></a>-->
         </div>
         <div class="footer-links" id="footer-links2">
             <img src="images/logos/site-logo-thumb.png" alt="YSC" />
