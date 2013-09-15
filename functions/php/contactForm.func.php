@@ -9,6 +9,7 @@ Hello, you've received a new submission from the contact form at http://ysc5.com
 Name: $_REQUEST[name] <br>
 Email: $_REQUEST[email] <br>
 Phone: $_REQUEST[phone] <br>
+Comments: $_REQUEST[comments]
 EOD;
 $headers = 'From: YouthSkillsCenter.com <no-reply@ysc5.com>' . "\r\n" .
     'Reply-To: no-reply@ysc5.com' .

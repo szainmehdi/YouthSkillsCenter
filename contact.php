@@ -126,6 +126,7 @@ else {
                                     <input class="light_text_input" name="name" type="text" placeholder="Name" />
                                     <input class="light_text_input" name="email" type="email" placeholder="Email" />
                                     <input class="light_text_input" name="phone" type="phone" placeholder="Phone" />
+                                    <textarea class="light_text_input" name="comments" placeholder="Comments"></textarea>
                                     <input class="light_text_input" name="submit" type="submit" value="Submit" />
                                 </form>
                             </div>
