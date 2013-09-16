@@ -154,7 +154,7 @@ PRESCHOOL
         <h2 style="color: #0060d1;text-transform: none;"><strong>YSC Preschool.</strong> Interactive. Hands-On. </h2>
         <p>
             Our preschool program at Youth Skills Center employs the <strong>HighScope Curriculum</strong>
-            for an interactive and hands on learning approach. Every hour is filled with fresh, new learning
+            for an interactive and hands-on learning approach. Every hour is filled with fresh, new learning
             experiences, building a strong and thorough foundation for the future of your child's
             education. <strong>But our work goes above and beyond "kindergarten readiness."</strong>
             YSC Preschool uses methods that help build and promote curiosity, creativity, cooperation, independence,
@@ -217,7 +217,7 @@ PRESCHOOL
         <hr />
         <p style="font-weight: 400; background-color: #f8ff49;padding: 4px; ">
             We believe we have a lot to offer in our preschool programs. <strong>No matter the schedule, no
-                matter the budget, we can work with you! </strong>Give us a call today to see how your can take
+                matter the budget, we can work with you! </strong>Give us a call today to see how you can take
             advantage of tuition lower than ever before.
         </p>
     </div>
@@ -244,7 +244,7 @@ PRESCHOOL
         <h2 style="color: #00ca96;">Inspiration</h2>
         <p>
             At YSC, we take inspiration from anyone, anywhere. Here is one of our favorite
-            inspirational quotes from famous personalities.
+            inspirational quotes.
         </p>
         <p class="quote">
             "Children are great imitators. So give them something great to imitate."
@@ -368,7 +368,7 @@ SCHOOL AGE CARE
         <hr />
         <p style="background-color: #fae844; font-weight: 400;">
             We believe we have a lot to offer in our school-age programs. <strong>No matter the schedule, no
-            matter the budget, we can work with you! </strong>Give us a call today to see how your can take
+            matter the budget, we can work with you! </strong>Give us a call today to see how you can take
             advantage of tuition lower than ever before.
         </p>
     </div>

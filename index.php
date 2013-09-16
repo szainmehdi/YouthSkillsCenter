@@ -48,7 +48,7 @@ else {
                                     Unleash your child's potential.
                                 </h1>
                                 <p>
-                                    With the warm and welcoming environment at YSC, your child reach
+                                    With the warm and welcoming environment at YSC, your child can reach
                                     their true potential. And with the best prices of the year, now is the best time to join!
                                 </p>
                                 <div class="action_button">
@@ -64,10 +64,10 @@ else {
                             <h2 style="color: #27ca00;">Unbeatable Pricing</h2>
                             <p>
                                 We mean it: we're committed to bringing you the <strong>best prices possible for preschool and childcare.</strong> We think
-                                our prices are lower than any other center in the area, but <strong>if you can find a better price, we'll match it!</strong>*
+                                our prices are lower than any other licensed center in the area, but <strong>if you can find a better price, we'll match it!</strong>*
                             </p>
                             <p class='legal' style="color: #888;">
-                                *Restriction apply. Call 951.681.2972 for details. For new enrollments only.
+                                *Restrictions apply. Call 951.681.2972 for details. For new enrollments only.
                             </p>
                         </div>
                     </div>
