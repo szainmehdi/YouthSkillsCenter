@@ -1,0 +1,4 @@
+<Files "*">
+#php_value auto_prepend_file "C:/wamp/www/YouthSkillsCenter/includes/config.inc.php"
+php_value auto_prepend_file "/var/www/html/www.youthskillscenter.com/includes/config.inc.php"
+</Files>

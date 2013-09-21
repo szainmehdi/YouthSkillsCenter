@@ -1,12 +1,5 @@
 <?php
 $cfg['page'] = "programs";
-$relative_path = $_SERVER['DOCUMENT_ROOT'];
-if(strstr($relative_path,"moo")) {
-    $relative_path .= "/";
-}
-else {
-    $relative_path .= "/YouthSkillsCenter/";
-}
 ?>
 <!DOCTYPE html> <!-- HTML5 Document -->
 <!--
@@ -52,7 +45,7 @@ else {
 <?php include_once("includes/plugins/analytics.php") ?>
 <div id="wrapper">
 
-<?php require_once($relative_path . 'includes/header.inc.php'); ?>
+<?php require_once($cfg['root_dir']. 'includes/header.inc.php'); ?>
 
 <div id="content-wrap">
 <div id="content-inner-wrap">
@@ -431,7 +424,7 @@ SCHOOL AGE CARE
     </div>
 </div>
 
-<?php require_once($relative_path . 'includes/footer.inc.php'); ?>
+<?php require_once($cfg['root_dir']. 'includes/footer.inc.php'); ?>
 </div>
 </div>
 

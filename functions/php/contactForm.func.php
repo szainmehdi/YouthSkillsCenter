@@ -23,13 +23,6 @@ $headers = 'From: YouthSkillsCenter.com <no-reply@ysc5.com>' . "\r\n" .
 mail($to, $subject, $body, $headers);
 
 $cfg['page'] = "contact";
-$relative_path = $_SERVER['DOCUMENT_ROOT'];
-if(strstr($relative_path,"moo")) {
-    $relative_path .= "/sites/ysc/";
-}
-else {
-    $relative_path .= "/YouthSkillsCenter/";
-}
 ?>
 <!DOCTYPE html> <!-- HTML5 Document -->
 <!--
@@ -80,7 +73,7 @@ else {
 <body>
 <div id="wrapper">
 
-    <?php require_once($relative_path . 'includes/header.inc.php'); ?>
+    <?php require_once($cfg['root_dir']. 'includes/header.inc.php'); ?>
 
     <div id="content-wrap">
         <div id="content-inner-wrap">
@@ -137,7 +130,7 @@ else {
             </div>
 
 
-            <?php require_once($relative_path . 'includes/footer.inc.php'); ?>
+            <?php require_once($cfg['root_dir']. 'includes/footer.inc.php'); ?>
         </div>
     </div>
 

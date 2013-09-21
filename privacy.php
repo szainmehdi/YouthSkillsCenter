@@ -1,12 +1,5 @@
 <?php
 $cfg['page'] = "about";
-$relative_path = $_SERVER['DOCUMENT_ROOT'];
-if(strstr($relative_path,"moo")) {
-    $relative_path .= "/";
-}
-else {
-    $relative_path .= "/YouthSkillsCenter/";
-}
 ?>
 <!DOCTYPE html> <!-- HTML5 Document -->
 <!--
