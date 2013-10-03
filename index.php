@@ -34,24 +34,24 @@ $cfg['page'] = "home";
             <div id="content-wrap">
             	<div id="content-inner-wrap">
                     <div class="content-box">
-                        <div id="large_banner_test_01" class="banner_image" style="height: 400px;background-image: url(images/banners/child-hands_large.jpg);
-                        background-position: 150px -200px;">
+                        <div id="large_banner_test_01" class="banner_image" style="height: 400px;background-image: url(images/banners/events/halloween.jpg);">
                             <div class="banner_content">
-                                <h1 style="background-color: rgba(255,8,123,0.84);color: white;margin-top: 120px;">
-                                    Unleash your child's potential.
+                                <h1 style="background-color: rgba(255,61,0,0.83);color: white;margin-top: 40px;">
+                                    Halloween Carnival 2013
                                 </h1>
-                                <p>
-                                    With the warm and welcoming environment at YSC, your child can reach
-                                    their true potential. And with the best prices of the year, now is the best time to join!
+                                <p style="margin-left: 40px;">
+                                    Join us at our 4<sup>th</sup> Annual Halloween Carnival for performances, games, contests and more.
+                                    Buy your tickets and find out more at Youth Skills Center.
                                 </p>
-                                <div class="action_button">
+                                <div class="action_button" style="background-color: rgba(144,0,255,0.81);color: white;margin-top: 140px;margin-left: -580px">
                                     <div class="icon call"></div>
-                                    Call Us Now!
+                                    Buy your tickets today!
                                     <a href="contact.php"><span class="full-box-link"></span></a>
                                 </div>
                             </div>
                         </div>
                     </div>
+
                     <div class="content-box small-left" style="background-color: white;">
                         <div class="content-box-inner-wrap">
                             <h2 style="color: #27ca00;">Unbeatable Pricing</h2>
@@ -134,6 +134,25 @@ $cfg['page'] = "home";
                                     <span class="link_sub">Year-round swimming lessons in our outdoor heated pool</span>
                                 </li>-->
                             </ul>
+                        </div>
+                    </div>
+                    <div class="content-box">
+                        <div id="large_banner_test_01" class="banner_image" style="height: 400px;background-image: url(images/banners/child-hands_large.jpg);
+                        background-position: 150px -200px;">
+                            <div class="banner_content">
+                                <h1 style="background-color: rgba(255,8,123,0.84);color: white;margin-top: 120px;">
+                                    Unleash your child's potential.
+                                </h1>
+                                <p>
+                                    With the warm and welcoming environment at YSC, your child can reach
+                                    their true potential. And with the best prices of the year, now is the best time to join!
+                                </p>
+                                <div class="action_button">
+                                    <div class="icon call"></div>
+                                    Call Us Now!
+                                    <a href="contact.php"><span class="full-box-link"></span></a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <?php require_once($cfg['root_dir']. 'includes/footer.inc.php'); ?>
