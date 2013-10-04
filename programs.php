@@ -45,11 +45,11 @@ $cfg['page'] = "programs";
 <?php include_once("includes/plugins/analytics.php") ?>
 <div id="wrapper">
 
-<?php require_once($cfg['root_dir']. 'includes/header.inc.php'); ?>
+<?php showHeader("web",$cfg['page']); ?>
 
 <div id="content-wrap">
 <div id="content-inner-wrap">
-<div class="content-box">
+<div class="content-box top">
     <div id="large_banner_test_01" class="banner_image" style="height: 800px;background-image: url(images/banners/children_large.jpg);">
         <div class="banner_content">
             <h1 style="background-color: rgba(17,172,197,0.81);color: white;margin-top: 460px;">

@@ -1,0 +1,69 @@
+/* USER INFO */
+.user_info {
+    width: 48px;
+    height: 48px;
+    background-color: red;
+    border: 4px solid #eee;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    box-shadow: 0 0 2px rgba(0,0,0,0.4);
+
+    color: white;
+    font-size: 36px;
+    text-align: center;
+    text-transform: uppercase;
+
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select:none;
+    user-select:none;
+
+    cursor: pointer;
+}
+.dropdown_arrow {
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    top: 50%;
+    margin-top: -5px;
+    left: 64px;
+
+    cursor: pointer;
+
+    background: url(../images/ux/dropdown_arrows.png) bottom no-repeat;
+
+}
+.dropdown_arrow.up {
+    background: url(../images/ux/dropdown_arrows.png) top no-repeat;
+}
+
+.user_info_more {
+    padding: 20px;
+    position: absolute;
+    top: 58px;
+    right: -44px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.6);
+    background-color:rgba(255,255,255,0.8);
+    z-index: 4;
+    font-size: 16px;
+    text-align: left;
+    display: none;
+}
+.user_info_item,
+.user_info_item:link,
+.user_info_item:visited {
+    color: #333;
+    text-decoration: none;
+    text-transform: none;
+    font-weight: 300;
+    white-space: nowrap;
+    padding: 5px 5px;
+    display: block;
+    border-bottom: 1px solid #999;
+}
+.user_info_item.logout {
+    border: none;
+    text-align: right;
+    font-size: 80%;
+}

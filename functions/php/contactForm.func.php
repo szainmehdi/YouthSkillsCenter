@@ -73,11 +73,11 @@ $cfg['page'] = "contact";
 <body>
 <div id="wrapper">
 
-    <?php require_once($cfg['root_dir']. 'includes/header.inc.php'); ?>
+    <?php showHeader("web",$cfg['page']); ?>
 
     <div id="content-wrap">
         <div id="content-inner-wrap">
-            <div class="content-box">
+            <div class="content-box top">
                 <div id="large_banner_test_01" class="banner_image" style="height: 400px;
                         background-image: url(images/banners/children.jpg);background-size: contain;
                         background-position: left;">

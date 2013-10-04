@@ -9,8 +9,8 @@
         <!-- copyright & related links go here -->
         <div class="footer-links" id="footer-links1">
             <h4>Information</h4>
-            <a class="fl" href="about.php">About YSC</a>
-            <a class="fl" href="programs.php">Our Programs</a>
+            <a class="fl" href="<?php echo $cfg['base_dir']; ?>about.php">About YSC</a>
+            <a class="fl" href="<?php echo $cfg['base_dir']; ?>programs.php">Our Programs</a>
             <!--<a class="fl" href="#">Our Facility</a>-->
             <!--<h4>MyYSC</h4>
             <a class="fl" href="#">Login to MyYSC</a>
@@ -19,7 +19,7 @@
         </div>
         <div class="footer-links" id="footer-links2">
             <h4>Site Info</h4>
-            <a class="fl" href="privacy.php">Privacy Policy</a>
+            <a class="fl" href="<?php echo $cfg['base_dir']; ?>privacy.php">Privacy Policy</a>
             <!--<a class="fl" href="#">Terms of Service</a>-->
             <!--<a class="fl" href="#">Feedback</a>-->
             <h4>Resources</h4>
@@ -28,7 +28,7 @@
             <!--<a class="fl" href="#"><em>more</em></a>-->
         </div>
         <div class="footer-links" id="footer-links2">
-            <img src="images/logos/site-logo-thumb.png" alt="YSC" />
+            <a href="<?php echo $cfg['base_dir']; ?>index.php"><img src="<?php echo $cfg['base_dir']; ?>images/logos/site-logo-thumb.png" alt="YSC" /></a>
             <h4>Contact Us</h4>
             <a class="fl" href="tel:9516812972"><strong>tel.</strong> 951.681.2972</a>
             <a class="fl" href="mailto:info@ysc5.com"><strong>email.</strong> info@ysc5.com</a>
@@ -37,5 +37,5 @@
     </div>
 </div>
 <div id="copyright">
-    <p>Copyright &copy; <?php echo date("Y"); ?> Youth Skills Center. All images, artwork, and logos used in compliance or with permission. Site by <a href="http://www.zcomputers.org" target="_blank">Z Computers</a>. Designed and Engineered by S. Zain Mehdi.</p>
+    <p>Copyright &copy; <?php echo date("Y"); ?> Youth Skills Center. All images, artwork, and logos used in compliance or with permission. Site by <a href="http://www.zcomputers.org" target="_blank">Z Computers</a>. Designed and Engineered by S. Zain Mehdi. <a href="<?php echo $cfg['base_dir']; ?>admin/login.php">Admin Login</a></p>
 </div>
