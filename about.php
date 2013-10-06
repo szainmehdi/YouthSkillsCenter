@@ -12,6 +12,10 @@ $cfg['page'] = "about";
 	<head>
         <title>About Us | Youth Skills Center - A Preschool &amp; Childcare Center in Riverside, CA | Ages 2-14</title>
 
+        <meta name="description" content="A licensed child care and preschool center in Riverside, Youth Skills Center
+            offers the best of educational services for the prices you want, making it one of the highest ranked centers
+            in parent satisfaction and affordability.">
+
         <!-- Begin Stylesheets -->
         <link href="styles/fonts.css" rel="stylesheet" type="text/css" />
         <link href="styles/main.css" rel="stylesheet" type="text/css" />

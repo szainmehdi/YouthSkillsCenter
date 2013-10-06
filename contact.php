@@ -12,6 +12,9 @@ $cfg['page'] = "contact";
 	<head>
         <title>Contact Us | Youth Skills Center - A Preschool &amp; Childcare Center in Riverside, CA | Ages 2-14</title>
 
+        <meta name="description" content="Our staff is here to answer your questions about our preschool or childcare
+            programs between 6am - 6pm. Give us a call at 951.681.2972 today!">
+
         <!-- Begin Stylesheets -->
         <link href="styles/fonts.css" rel="stylesheet" type="text/css" />
         <link href="styles/main.css" rel="stylesheet" type="text/css" />
