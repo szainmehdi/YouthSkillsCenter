@@ -10,7 +10,7 @@ $cfg['page'] = "programs";
 -->
 <html>
 <head>
-    <title>Our Programs | Youth Skills Center - A Preschool &amp; Childcare Center in Riverside, CA | Serving Children Ages 2-14</title>
+    <title>Our Programs | Youth Skills Center - A Preschool &amp; Childcare Center in Riverside, CA | Ages 2-14</title>
 
     <!-- Begin Stylesheets -->
     <link href="styles/fonts.css" rel="stylesheet" type="text/css" />
