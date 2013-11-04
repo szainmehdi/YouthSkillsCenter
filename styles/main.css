@@ -130,7 +130,7 @@ hr {
 .header-logo {
 	width: 400px;
 	height: 64px;
-	/*background:white;*/
+	background:white;
 	position:absolute;
 	z-index:500;
 	top: 24px;
