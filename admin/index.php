@@ -42,7 +42,7 @@ $cfg["page"] = "home";
     <div id="content-wrap">
         <div id="content-inner-wrap">
             <div class="content-box top">
-                <div id="large_banner_test_01" class="banner_image" style="height: 300px;background-image: url(<?php echo $cfg['base_dir']; ?>images/banners/events/halloween.jpg);">
+                <div id="large_banner_test_01" class="banner_image" style="height: 300px;background-image: url(<?php echo $cfg['base_dir']; ?>images/banners/children.jpg); background-size: 540px auto; background-position: right top;">
                     <div class="banner_content">
                         <h1 style="background-color: rgba(255,61,0,0.83);color: white;margin-top: 40px;">
                             Logged In Successfully
@@ -54,8 +54,7 @@ $cfg["page"] = "home";
                 </div>
             </div>
             <div class="content-box">
-                <div id="large_banner_test_01" class="banner_image" style="height: 400px;background-image: url(<?php echo $cfg['base_dir']; ?>images/banners/child-hands_large.jpg);
-                        background-position: 150px -200px;">
+                <div id="large_banner_test_01" class="banner_image" style="height: 400px;background-image: url(<?php echo $cfg['base_dir']; ?>images/backgrounds/pictures.jpg); background-position: top right; background-size: 1280px">
                     <div class="banner_content">
                         <h1 style="background-color: rgba(255,8,123,0.84);color: white;margin-top: 120px;">
                             Share those precious moments.

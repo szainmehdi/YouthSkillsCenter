@@ -54,11 +54,11 @@ if(isset($_SESSION['login'])) {
             margin-left: -170px;
 
             border-radius: 8px;
-            background-color: rgba(255,255,255,0.7);
-            box-shadow: 0 0 10px #ddd;
+            /*background-color: rgba(255,255,255,0.7);*/
+            /*box-shadow: 0 0 10px #ddd;*/
         }
         #login_wrapper.loading {
-            background-image: url(images/ux/preloader_transparent.gif);
+            background-image: url(../images/ux/preloader_transparent.gif);
             background-repeat: no-repeat;
             background-position: center 80px;
             background-size: 48px;
@@ -69,7 +69,7 @@ if(isset($_SESSION['login'])) {
             font-weight: bold;;
         }
         #err.loading {
-            color: darkorange;
+            color: dimgray;
             padding: 60px;
             text-align: center;;
             margin-top: 20px;
@@ -83,7 +83,7 @@ if(isset($_SESSION['login'])) {
             text-transform: none;
         }
         input[type="button"] {
-            background-color: #ff9b1a;
+            background-color: #ff0000;
             color: white;
             font-family: Raleway, sans-serif;
             font-weight: bold;
@@ -161,7 +161,7 @@ if(isset($_SESSION['login'])) {
     <div id="content-wrap">
         <div id="content-inner-wrap">
             <div class="content-box top">
-                <div id="large_banner_test_01" class="banner_image" style="height: 800px;background-image: url(<?php echo $cfg['base_dir']; ?>images/banners/events/halloween.jpg);">
+                <div id="large_banner_test_01" class="banner_image" style="height: 800px;background-image: url(<?php echo $cfg['base_dir']; ?>images/backgrounds/Depositphotos_2769334_web.jpg);">
                     <div class="banner_content">
                         <div id="login_wrapper">
                             <h6 id="login_title">Log In</h6>
