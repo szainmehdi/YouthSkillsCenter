@@ -1,5 +1,7 @@
 <?php
 $cfg['page'] = "about";
+require_once $cfg['root_dir'] . "includes/global.inc.php";
+
 ?>
 <!DOCTYPE html> <!-- HTML5 Document -->
 <!-- 

@@ -1,5 +1,7 @@
 <?php
 $cfg['page'] = "home";
+require_once $cfg['root_dir'] . "includes/global.inc.php";
+
 ?>
 <!DOCTYPE html> <!-- HTML5 Document -->
 <!-- 
@@ -23,6 +25,34 @@ $cfg['page'] = "home";
         <link href="styles/index.css" rel="stylesheet" type="text/css" />
         <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,700,300' rel='stylesheet' type='text/css'>
         <link rel="shortcut icon" href="images/favicon/favicon_new2.ico" />
+
+        <style type="text/css">
+            .social-review-link {
+                display: inline-block;
+                vertical-align: top;
+                width: 64px;
+                height: 64px;
+                background-size: 64px 64px;
+                position: relative;
+                font-size: 0.8em;;
+                text-align: center;
+                white-space: nowrap;
+                border-radius: 32px;
+                box-shadow: inset 0 0 16px rgba(0,0,0,0.5);
+                margin:  24px 40px;
+            }
+            .social-review-link span {
+                position: absolute;
+                top: 72px;
+                left: 50%;
+                text-align: center;
+                display: block;
+                width: 160px;
+                overflow: hidden;
+                margin-left: -80px;
+            }
+        </style>
+
         <!-- End Stylesheets -->
         
         <!-- jQuery Plugins -->
@@ -85,24 +115,33 @@ $cfg['page'] = "home";
                         </div>
                     </div>
                     <div class="content-box">
-                        <div id="large_banner_test_01" class="banner_image" style="height: 300px;background-image: url(images/banners/gift_cards_promo.jpg)">
+                        <div id="large_banner_test_01" class="banner_image" style="height: 300px;background-image: url(images/banners/thumbs-up1.jpg); background-size: 350px;; background-position: right bottom;">
                             <div class="banner_content">
-                                <h1 style="background-color: rgb(255,155,26);color: white;margin-top: -10px;">
-                                    Refer a student. Get $20.
+                                <h1 style="background-color: rgb(46, 165, 255);color: white;margin-top: -10px;">
+                                    Share your opinion. Write a review for us!
                                 </h1>
-                                <p style="background-color: rgb(85,191,243);color: white;">
-                                    Now through October 31, 2013, get a $20 VISA Gift card for each student that registers
-                                    at Youth Skills Center with your referral! <br />
-                                    <span class="legal">Offer valid while supplies last. See YSC staff for details.</span>
+                                <p style="background-color: rgb(255, 255, 255);color: #333;;">
+                                    <a class="social-review-link" target="_blank" href="https://plus.google.com/102809423592877433946/about?gl=US&hl=en-US" style="background-image: url(images/logos/etc/gplus.png)">
+                                        <span>Google+ Local</span>
+                                    </a>
+                                    <a class="social-review-link" target="_blank" href="http://local.yahoo.com/info-99326434-youth-skills-center-riverside;_ylt=AiGCRPLEZLmOAZ80l2C166hwVdx_;_ylv=3?csz=Upland%2C+CA&tab=reviews#reviews" style="background-image: url(images/logos/etc/yahoo.jpg)">
+                                        <span>Yahoo Local</span>
+                                    </a>
+                                    <a class="social-review-link" target="_blank" href="http://www.yelp.com/biz/youth-skills-center-riverside" style="background-image: url(images/logos/etc/yelp.png)">
+                                        <span>Yelp</span>
+                                    </a>
+                                    <a class="social-review-link" target="_blank" href="http://www.yellowpages.com/riverside-ca/mip/youth-skills-center-6996945" style="background-image: url(images/logos/etc/yp.png)">
+                                        <span>YP Reviews</span>
+                                    </a>
                                 </p>
                             </div>
                         </div>
                     </div>
                     <div class="content-box large-left" style="background-color: #1FCB4A;">
                         <div class="content-box-inner-wrap">
-                            <h2 style="color: white;"><strong>Best Prices of the Year </strong> for Preschool!</h2>
+                            <h2 style="color: white;">New Year. <strong>New Prices!</strong></h2>
                             <p style="color: white">Now's the perfect time to enroll in our best-in-class programs, for every child between
-                            the ages of 2 and 14. Lock in the best promotional rate for our preschool program before October 31!</p>
+                            the ages of 2 and 14. Lock in the best promotional rate for our preschool program before March 1!</p>
                             <p style="color: white; font-weight: 700"><a href="#contact" class="white" style="color: white">
                                     Call us today</a> to for more information!
                             </p>

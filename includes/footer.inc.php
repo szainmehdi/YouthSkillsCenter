@@ -37,5 +37,5 @@
     </div>
 </div>
 <div id="copyright">
-    <p>Copyright &copy; <?php echo date("Y"); ?> Youth Skills Center. All images, artwork, and logos used in compliance or with permission. Site by <a href="http://www.zcomputers.org" target="_blank">Z Computers</a>. Designed and Engineered by S. Zain Mehdi. <a href="<?php echo $cfg['base_dir']; ?>admin/login.php">Admin Login</a></p>
+    <p>Copyright &copy; <?php echo date("Y"); ?> Youth Skills Center. All images, artwork, and logos used in compliance or with permission. Site by <a href="http://www.zcomputers.org" target="_blank">Z Computers</a>. Designed and Engineered by S. Zain Mehdi. <!--<a href="<?php /*echo $cfg['base_dir']; */?>admin/login.php">Admin Login</a></p>-->
 </div>
