@@ -267,7 +267,7 @@ PRESCHOOL
     <div class="content-box-inner-wrap">
         <h2 style="color: white;">$20 VISA Gift Card For Referrals</h2>
         <p style="color: white;">
-            Now through October 31st, 2013, you can receive a <strong>$20 VISA Gift Card</strong> for every student who registers at
+            Now through June 30th, 2014, you can receive a <strong>$20 VISA Gift Card</strong> for every student who registers at
             YSC with your referral!
         </p>
         <p class="legal"  style="color: white;">Offer valid while supplies last.</p>
@@ -423,7 +423,7 @@ SCHOOL AGE CARE
     <div class="content-box-inner-wrap">
         <h2 style="color: white;">$20 VISA Gift Card For Referrals</h2>
         <p style="color: white;">
-            Now through October 31st, 2013, you can receive a <strong>$20 VISA Gift Card</strong> for every student who registers at
+            Now through June 30th, 2014, you can receive a <strong>$20 VISA Gift Card</strong> for every student who registers at
             YSC with your referral!
         </p>
         <p class="legal"  style="color: white;">Offer valid while supplies last.</p>
