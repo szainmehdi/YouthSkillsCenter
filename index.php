@@ -1,7 +1,6 @@
 <?php
 $cfg['page'] = "home";
 require_once $cfg['root_dir'] . "includes/global.inc.php";
-
 ?>
 <!DOCTYPE html> <!-- HTML5 Document -->
 <!-- 
@@ -51,12 +50,37 @@ require_once $cfg['root_dir'] . "includes/global.inc.php";
                 overflow: hidden;
                 margin-left: -80px;
             }
+            .banner_slider_home {
+                -webkit-transition: background 0.5s linear;
+                -moz-transition: background 0.5s linear;
+                transition: background 0.5s linear;
+            }
         </style>
 
         <!-- End Stylesheets -->
         
         <!-- jQuery Plugins -->
         <script src="functions/js/jquery.min.js"></script>
+        <script src="functions/js/jquery.preload.min.js"></script>
+        <script type="text/javascript">
+            $(function() {
+                //slider for homepage top banner
+                var links = [
+                    "images/gallery/YSC_MAIN_BLURRED_SMALL.jpg",
+                    "images/banners/child-hands_large.jpg",
+                    "images/banners/Kindergarten_l.jpg"
+                ];
+                $.preload(links);
+                changeBanner(0);
+                function changeBanner(i) {
+                    console.log("Changing Banner.");
+                    if(i>=links.length) i=0;
+                    $(".banner_slider_home").css("background-image", "url(" + links[i] + ")");
+                    console.log(i);
+                    setTimeout(function() { changeBanner(++i) }, 7000);
+                }
+            });
+        </script>
     </head>
 	<body>
     <?php include_once("includes/plugins/analytics.php") ?>
@@ -67,51 +91,71 @@ require_once $cfg['root_dir'] . "includes/global.inc.php";
             <div id="content-wrap">
             	<div id="content-inner-wrap">
                     <div class="content-box top">
-                        <div id="large_banner_test_01" class="banner_image" style="height: 400px;background-image: url(images/banners/child-hands_large.jpg);
-                        background-position: 150px -200px;">
+                        <div id="large_banner_test_01" class="banner_image banner_slider_home" style="height: 650px;background-image: url(images/gallery/YSC_MAIN_BLURRED_SMALL.jpg);
+                        background-size: cover;">
                             <div class="banner_content">
-                                <h1 style="background-color: rgba(255,8,123,0.84);color: white;margin-top: 120px;">
-                                    Unleash your child's potential.
+                                <h1 style=" font-weight: 200; background-color: transparent;color: white;margin: 390px auto 0 auto; width: 100%; text-align: center; text-shadow: 1px 1px 3px rgba(0,0,0,0.9);">
+                                    Welcome to <span style="font-weight: 600"> Youth Skills Center. </span>
                                 </h1>
-                                <p>
-                                    With the warm and welcoming environment at YSC, your child can reach
-                                    their true potential. And with the best prices of the year, now is the best time to join!
+                                <p style="font-size: 20px; font-weight: 300; width: 800px; margin: 20px auto; float: none;">
+                                    As a new licensed preschool and childcare center in Riverside, CA, we're shaking things up!
+                                    Youth Skills Center provides an all-around great learning experience for your child at the
+                                    lowest prices in the business!
                                 </p>
-                                <div class="action_button">
-                                    <div class="icon call"></div>
-                                    Call Us Now!
-                                    <a href="contact.php"><span class="full-box-link"></span></a>
-                                </div>
                             </div>
                         </div>
                     </div>
                     <div class="content-box small-left" style="background-color: white;">
                         <div class="content-box-inner-wrap">
-                            <h2 style="color: #27ca00;">Unbeatable Pricing</h2>
+                            <h2 style="color: #ff6900;">Quick Links</h2>
                             <p>
-                                We mean it: we're committed to bringing you the <strong>best prices possible for preschool and childcare.</strong> We think
-                                our prices are lower than any other licensed center in the area, but <strong>if you can find a better price, we'll match it!</strong>*
+                                Jump directly to a program.
                             </p>
-                            <p class='legal' style="color: #888;">
-                                *Restrictions apply. Call 951.681.2972 for details. For new enrollments only.
-                            </p>
+                            <ul>
+                                <li>
+                                    <a href="programs.php#preschool" class="navigation_link">Preschool</a>
+                                    <br />
+                                    <span class="link_sub">Full day or half day preschool program for all children between
+                                        the ages of 2 and 5</span>
+                                </li>
+                                <li>
+                                    <a href="programs.php#schoolage" class="navigation_link">School Age Care</a>
+                                    <br />
+                                    <span class="link_sub">Before and after school care with homework help and transportation</span>
+                                </li>
+                                <!--<li>
+                                    <a href="#yscacademy" class="navigation_link">YSC Academy</a>
+                                    <br />
+                                    <span class="link_sub">Kindergarten &mdash; 3rd grade technology-enhanced charter school</span>
+                                </li>
+                                <li>
+                                    <a href="#swimming" class="navigation_link">Swimming</a>
+                                    <br />
+                                    <span class="link_sub">Year-round swimming lessons in our outdoor heated pool</span>
+                                </li>-->
+                            </ul>
                         </div>
+
                     </div>
-                    <div class="content-box large-right" style="background-color: #9669FE;">
-                        <div class="content-box-inner-wrap">
-                            <h2 style="color: white;"><strong>Welcome</strong> to our new website.</h2>
-                            <p style="color: white;">
-                                We've changed a few things around here. Our new website makes it easy for you to
-                                navigate around the site and learn more about our many great services.
-                            </p>
-                            <p style="color: white">
-                                Of the many changes and revamps, here are some of the noteworthy ones:
-                                <ul style="color: white">
-                                    <li>Streamlined navigation bar, with only four tabs.</li>
-                                    <li>Touch-friendly layout and design.</li>
-                                    <li>A new, modern, child-friendly design.</li>
-                                </ul>
-                            </p>
+                    <div class="content-box large-right" style="">
+                        <div class="content-box-inner-wrap" style="padding: 0">
+                            <div id="large_banner_test_01" class="banner_image" style="height: 309px;background-image: url(images/banners/child-hands_large.jpg);
+                        background-size: auto 280px; background-position: bottom left;">
+                                <div class="banner_content">
+                                    <h1 style="background-color: rgba(255,8,123,0.84);color: white;margin-top: -20px; font-size: 28px;">
+                                        Unleash your child's potential.
+                                    </h1>
+                                    <p style="font-size: 16px; margin-left: 20px;" >
+                                        With the warm and welcoming environment at YSC, your child can reach
+                                        their true potential. And with the best prices of the year, now is the best time to join!
+                                    </p>
+                                    <div class="action_button" style="float: right; margin: 20px 20px 0 0;">
+                                        <div class="icon call"></div>
+                                        Call Us Now!
+                                        <a href="contact.php"><span class="full-box-link"></span></a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div class="content-box">
@@ -149,33 +193,14 @@ require_once $cfg['root_dir'] . "includes/global.inc.php";
                     </div>
                     <div class="content-box small-right" style="background-color: white;">
                         <div class="content-box-inner-wrap">
-                            <h2 style="color: #ff6900;">Quick Links</h2>
+                            <h2 style="color: #27ca00;">Unbeatable Pricing</h2>
                             <p>
-                                Jump directly to a program.
+                                We mean it: we're committed to bringing you the <strong>best prices possible for preschool and childcare.</strong> We think
+                                our prices are lower than any other licensed center in the area, but <strong>if you can find a better price, we'll match it!</strong>*
                             </p>
-                            <ul>
-                                <li>
-                                    <a href="programs.php#preschool" class="navigation_link">Preschool</a>
-                                    <br />
-                                    <span class="link_sub">Full day or half day preschool program for all children between
-                                        the ages of 2 and 5</span>
-                                </li>
-                                <li>
-                                    <a href="programs.php#schoolage" class="navigation_link">School Age Care</a>
-                                    <br />
-                                    <span class="link_sub">Before and after school care with homework help and transportation</span>
-                                </li>
-                                <!--<li>
-                                    <a href="#yscacademy" class="navigation_link">YSC Academy</a>
-                                    <br />
-                                    <span class="link_sub">Kindergarten &mdash; 3rd grade technology-enhanced charter school</span>
-                                </li>
-                                <li>
-                                    <a href="#swimming" class="navigation_link">Swimming</a>
-                                    <br />
-                                    <span class="link_sub">Year-round swimming lessons in our outdoor heated pool</span>
-                                </li>-->
-                            </ul>
+                            <p class='legal' style="color: #888;">
+                                *Restrictions apply. Call 951.681.2972 for details. For new enrollments only.
+                            </p>
                         </div>
                     </div>
                     <?php require_once($cfg['root_dir']. 'includes/footer.inc.php'); ?>
