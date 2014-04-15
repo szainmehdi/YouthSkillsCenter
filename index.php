@@ -139,23 +139,25 @@ require_once $cfg['root_dir'] . "includes/global.inc.php";
                     </div>
                     <div class="content-box large-right" style="">
                         <div class="content-box-inner-wrap" style="padding: 0">
-                            <div id="large_banner_test_01" class="banner_image" style="height: 309px;background-image: url(images/banners/child-hands_large.jpg);
-                        background-size: auto 280px; background-position: bottom left;">
-                                <div class="banner_content">
-                                    <h1 style="background-color: rgba(255,8,123,0.84);color: white;margin-top: -20px; font-size: 28px;">
-                                        Unleash your child's potential.
+                            <div class="content-box-inner-wrap" style=" padding: 0;">
+                                <div style="width: 300px; background: red;padding:  28px 18px;
+                              box-sizing: border-box; -moz-box-sizing: border-box; color: white; text-align: center;
+                              display: inline-block; vertical-align: middle;">
+                                    <span style="">Programs starting at only</span><br/>
+                                    <span style="font-size: 126px;">$50</span><br/>
+                                    <span style="">per week! No strings attached.</span>
+                                </div>
+                                <div class="banner_content" style="display: inline-block; vertical-align: top;  width: 400px;">
+                                    <h1 style="color: red;margin-top: -20px; font-size: 36px;">
+                                        Incredible prices for the summer.
                                     </h1>
-                                    <p style="font-size: 16px; margin-left: 20px;" >
-                                        With the warm and welcoming environment at YSC, your child can reach
-                                        their true potential. And with the best prices of the year, now is the best time to join!
+                                    <p style="font-size: 16px; margin-left: 20px; padding: 16px 0 0 0; width: auto; float: none;" >
+                                        These prices won't last long. Call us today to schedule your tour and lock in these
+                                        prices for the summer!
                                     </p>
-                                    <div class="action_button" style="float: right; margin: 20px 20px 0 0;">
-                                        <div class="icon call"></div>
-                                        Call Us Now!
-                                        <a href="contact.php"><span class="full-box-link"></span></a>
-                                    </div>
                                 </div>
                             </div>
+
                         </div>
                     </div>
                     <div class="content-box">
@@ -182,22 +184,21 @@ require_once $cfg['root_dir'] . "includes/global.inc.php";
                         </div>
                     </div>
                     <div class="content-box large-left" style="background-color: #ffffff;">
-                        <div class="content-box-inner-wrap" style=" padding: 0;">
-                            <div style="width: 300px; background: red;padding:  28px 18px;
-                              box-sizing: border-box; -moz-box-sizing: border-box; color: white; text-align: center;
-                              display: inline-block; vertical-align: middle;">
-                                <span style="">Programs starting at only</span><br/>
-                                <span style="font-size: 126px;">$50</span><br/>
-                                <span style="">per week! No strings attached.</span>
-                            </div>
-                            <div class="banner_content" style="display: inline-block; vertical-align: top;  width: 400px;">
-                                <h1 style="color: red;margin-top: -20px; font-size: 36px;">
-                                    Incredible prices for the summer.
+                        <div id="large_banner_test_01" class="banner_image" style="height: 309px;background-image: url(images/banners/child-hands_large.jpg);
+                        background-size: auto 280px; background-position: bottom left;">
+                            <div class="banner_content">
+                                <h1 style="background-color: rgba(255,8,123,0.84);color: white;margin-top: -20px; font-size: 28px;">
+                                    Unleash your child's potential.
                                 </h1>
-                                <p style="font-size: 16px; margin-left: 20px; padding: 16px 0 0 0; width: auto; float: none;" >
-                                    These prices won't last long. Call us today to schedule your tour and lock in these
-                                    prices for the summer!
+                                <p style="font-size: 16px; margin-left: 20px;" >
+                                    With the warm and welcoming environment at YSC, your child can reach
+                                    their true potential. And with the best prices of the year, now is the best time to join!
                                 </p>
+                                <div class="action_button" style="float: right; margin: 20px 20px 0 0;">
+                                    <div class="icon call"></div>
+                                    Call Us Now!
+                                    <a href="contact.php"><span class="full-box-link"></span></a>
+                                </div>
                             </div>
                         </div>
                     </div>
