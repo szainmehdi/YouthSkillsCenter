@@ -67,8 +67,16 @@ require_once $cfg['root_dir'] . "includes/global.inc.php";
                 //slider for homepage top banner
                 var links = [
                     "images/gallery/YSC_MAIN_BLURRED_SMALL.jpg",
-                    "images/banners/child-hands_large.jpg",
-                    "images/banners/Kindergarten_l.jpg"
+                    "images/gallery/YSC_FRONT_2.jpg",
+                    "images/gallery/YSC_LUNCH_AREA.jpg",
+                    "images/gallery/YSC_PARKING.jpg",
+                    "images/gallery/YSC_PLAYGROUND.jpg",
+                    "images/gallery/YSC_SWIMMING_POOL.jpg",
+                    "images/gallery/YSC_SCHOOL_AGE_CLASSROOM_1.jpg",
+                    "images/gallery/YSC_PRESCHOOL_CLASSROOM_2.jpg",
+                    "images/gallery/YSC_PRESCHOOL_CLASSROOM_1.jpg",
+                    "images/gallery/YSC_PLAYGROUND_2.jpg",
+                    "images/gallery/YSC_FRONT.jpg"
                 ];
                 $.preload(links);
                 changeBanner(0);
