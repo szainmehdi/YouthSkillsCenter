@@ -11,10 +11,30 @@
             <div class="container">
                 <div class="intro-text">
                     <div class="intro-heading">Preschool &amp; Childcare<br /><strong>for the 21st Century.</strong></div>
-                    <a href="#scrolled" class="page-scroll btn btn-xl">Learn More</a>
+                    <a href="#open-house" class="page-scroll btn btn-xl">Learn More</a>
                 </div>
             </div>
         </header>
+
+        <section id="open-house">
+            <div class="container">
+                <div class="row text-center">
+                    <div class="col-md-4">
+                        <h1>Open House</h1>
+                    </div>
+                    <div class="col-md-4">
+                        <h1 >OCT 11<br/><small style="color: white;">10am - 4pm</small></h1>
+                    </div>
+                    <div class="col-md-4">
+                        <ul class="list-unstyled" style="font-size: 200%; margin-top: 28px; line-height: 1.8em;">
+                            <li><strong>FREE</strong> Popcorn!</li>
+                            <li><strong>FREE</strong> Snow Cones!</li>
+                            <li><strong>FREE</strong> Goodie Bags!</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
 
         <section class="thin" id="scrolled">
             <div class="container ">
@@ -154,6 +174,13 @@
 <style>
     header {
         background-image: url('/img/gallery/YSC_MAIN_BLURRED_SMALL.jpg');
+    }
+    #open-house {
+        background-color: #BF00B0;
+        color: white;
+    }
+    #open-house h1 {
+        font-size: 72px;
     }
 </style>
 @stop
