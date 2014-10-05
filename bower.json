@@ -1,0 +1,9 @@
+{
+    "name": "Youth Skills Center Website",
+    "dependencies": {
+        "jquery": "~2",
+        "bootstrap": "~3",
+        "fontawesome": "~4",
+        "jasny-bootstrap": "~3.1.3"
+    }
+}
