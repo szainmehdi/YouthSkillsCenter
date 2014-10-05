@@ -27,19 +27,19 @@
                 <div class="row">
                     <h2>Quick Facts</h2>
 
-                    <div class="fact-item col-xs-6 col-md-3">
+                    <div class="fact-item col-md-3">
                         <small>Ages</small><br />
                         5-14
                     </div>
-                    <div class="fact-item col-xs-6 col-md-3">
+                    <div class="fact-item col-md-3">
                         <small>Hours</small><br />
                         6am &mdash; 6pm
                     </div>
-                    <div class="fact-item col-xs-6 col-md-3">
+                    <div class="fact-item col-md-3">
                         <small>Grades</small><br />
                         KG &mdash; 8th
                     </div>
-                    <div class="fact-item col-xs-6 col-md-3">
+                    <div class="fact-item col-md-3">
                         <small>Max. Ratio</small><br />
                         10:1<br />
                         <small>student-teacher</small>
