@@ -1,5 +1,7 @@
 <?php
 
+use Illuminate\Http\JsonResponse;
+
 class HomeController extends BaseController {
 
 	/*
@@ -46,9 +48,14 @@ class HomeController extends BaseController {
 	public function contactSubmit()
 	{
         $input = Input::only(['name', 'phone', 'email', 'msg']);
-        Mail::send('emails.form-entry', $input, function($msg) {
-            $msg->to('info@ysc5.com', 'Youth Skills Center')->subject('New Web Lead from youthskillscenter.com');
-        });
+		if(count(array_filter($input)) == 4) {
+			Mail::send('emails.form-entry', $input, function($msg) {
+				$msg->to('info@ysc5.com', 'Youth Skills Center')->subject('New Web Lead from youthskillscenter.com');
+			});
+			return JsonResponse::HTTP_OK;
+		} else {
+			return JsonResponse::HTTP_INTERNAL_SERVER_ERROR;
+		}
 	}
 
 }
