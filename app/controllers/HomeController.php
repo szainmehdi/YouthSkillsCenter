@@ -1,7 +1,5 @@
 <?php
 
-use Illuminate\Support\Facades\Mail;
-
 class HomeController extends BaseController {
 
 	/*
@@ -47,10 +45,11 @@ class HomeController extends BaseController {
 	}
 	public function contactSubmit()
 	{
-        $input = Input::only(['name', 'phone', 'email', 'message']);
+        $input = Input::only(['name', 'phone', 'email', 'msg']);
         Mail::send('emails.form-entry', $input, function($msg) {
-            $msg->to('info@ysc5.com', 'Youth Skills Center')->subject('New Web Contact Submission');
+            $msg->to('info@ysc5.com', 'Youth Skills Center')->subject('New Web Lead from youthskillscenter.com');
         });
+		return true;
 	}
 
 }

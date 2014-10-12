@@ -10,7 +10,7 @@
 			{{{ $name }}} [{{{ $email }}} | {{{ $phone }}}] says: <br />
 
 			<blockquote>
-			    {{{ $message }}}
+			    {{{ $msg }}}
 			</blockquote>
 		</div>
 	</body>
