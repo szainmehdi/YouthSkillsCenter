@@ -122,6 +122,9 @@ return array(
 		'Illuminate\View\ViewServiceProvider',
 		'Illuminate\Workbench\WorkbenchServiceProvider',
 
+
+		'Roumen\Sitemap\SitemapServiceProvider',
+
 	),
 
 	/*

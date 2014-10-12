@@ -1,7 +1,7 @@
 @extends('layout.master')
 
 @section('title')
-    About Youth Skills Center - A Preschool and Childcare Center in Riverside, CA | Ages 2-14
+    About YSC
 @stop
 @section('content')
 

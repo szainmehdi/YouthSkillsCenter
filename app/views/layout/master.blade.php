@@ -5,8 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>@yield('title')</title>
+    <title>@yield('title') | Youth Skills Center Preschool & Child Care Center - Serving Riverside, Mira Loma, Jurupa Valley, and Eastvale.</title>
     <meta name="description" content="@yield('description')">
+    <meta name="keywords"
+          content="child care, preschool, day care, before school care, after school care, highscope curriculum,
+            kindergarten readiness, pre-k, day care center, child care center, riverside, jurupa valley, eastvale,
+            mira loma, inland empire, van buren, @yield('keywords')">
 
     <!-- Stylesheets -->
     <link href="/assets/css/main.css" rel="stylesheet">

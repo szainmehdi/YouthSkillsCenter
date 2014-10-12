@@ -1,7 +1,7 @@
 @extends('layout.master')
 
 @section('title')
-    Preschool at Youth Skills Center - A Preschool and Childcare Center in Riverside, CA | Ages 2-14
+    Preschool in Riverside, CA
 @stop
 
 @section('content')
@@ -130,8 +130,8 @@
                         We mean it: we're committed to bringing you the <strong>best prices possible for preschool and childcare.</strong> We think
                         our prices are lower than any other center in the area, but <strong>if you can find a better price, we'll match it!</strong>*
                     </p>
-                    <p class="legal" style="text-muted">
-                        *Restriction apply. Call 951.681.2972 for details. For new enrollments only.
+                    <p class="legal text-muted">
+                        *Restriction apply. Call us for details. For new enrollments only.
                     </p>
                 </div>
             </div>
