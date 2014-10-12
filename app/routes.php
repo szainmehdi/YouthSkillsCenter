@@ -29,7 +29,7 @@ Route::get('/programs', [ 'as' => 'programs', 'uses' => 'HomeController@programs
 Route::get('/privacy-policy', [ 'as' => 'privacy-policy', 'uses' => 'HomeController@privacyPolicy']);
 Route::get('/school-age-care', [ 'as' => 'school-age-care', 'uses' => 'HomeController@schoolAgeCare']);
 Route::get('/contact', [ 'as' => 'contact', 'uses' => 'HomeController@contact']);
-Route::any('/contact/submit', [ 'as' => 'contact-submit', 'uses' => 'HomeController@contactSubmit']);
+Route::get('/contact/submit', [ 'as' => 'contact-submit', 'uses' => 'HomeController@contactSubmit']);
 
 Route::get('/sitemap', [ 'as' => 'sitemap' , 'uses' => function () {
 
