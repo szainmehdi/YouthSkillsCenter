@@ -49,7 +49,6 @@ class HomeController extends BaseController {
         Mail::send('emails.form-entry', $input, function($msg) {
             $msg->to('info@ysc5.com', 'Youth Skills Center')->subject('New Web Lead from youthskillscenter.com');
         });
-		return true;
 	}
 
 }
