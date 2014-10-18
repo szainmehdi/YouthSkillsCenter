@@ -1,6 +1,6 @@
 <?php
 
-function setActive($route, $class = 'active')
+function set_link_active($route, $class = 'active')
 {
     return (Route::currentRouteName() == $route) ? $class : '';
 }

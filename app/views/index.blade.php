@@ -148,7 +148,7 @@
                         Preschool &amp; Child Care</span>, your child can reach their true potential.
                         And with the best prices of the year, now is the best time to join!
                     </p>
-                    <a href="/contact" class="btn btn-xl accent-three">Explore our programs</a>
+                    <a href="/programs" class="btn btn-xl accent-three">Explore our programs</a>
                 </div>
             </div>
         </div>

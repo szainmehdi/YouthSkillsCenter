@@ -28,6 +28,7 @@ Route::get('/preschool', [ 'as' => 'preschool', 'uses' => 'HomeController@presch
 Route::get('/programs', [ 'as' => 'programs', 'uses' => 'HomeController@programs']);
 Route::get('/privacy-policy', [ 'as' => 'privacy-policy', 'uses' => 'HomeController@privacyPolicy']);
 Route::get('/school-age-care', [ 'as' => 'school-age-care', 'uses' => 'HomeController@schoolAgeCare']);
+Route::get('/frequently-asked-questions', [ 'as' => 'faqs', 'uses' => 'HomeController@faqs']);
 Route::get('/contact', [ 'as' => 'contact', 'uses' => 'HomeController@contact']);
 Route::post('/contact/submit', [ 'as' => 'contact-submit', 'uses' => 'HomeController@contactSubmit']);
 
@@ -39,6 +40,7 @@ Route::get('/sitemap', [ 'as' => 'sitemap' , 'uses' => function () {
     $sitemap->add(URL::route('home'), '2014-10-12T20:10:00+02:00', '1.0', 'monthly');
     $sitemap->add(URL::route('preschool'), '2014-10-12T12:30:00+02:00', '0.9', 'monthly');
     $sitemap->add(URL::route('school-age-care'), '2014-10-12T12:30:00+02:00', '0.9', 'monthly');
+    $sitemap->add(URL::route('faqs'), '2014-10-18T12:30:00+02:00', '0.9', 'monthly');
     $sitemap->add(URL::route('programs'), '2014-10-12T12:30:00+02:00', '0.9', 'monthly');
     $sitemap->add(URL::route('about'), '2014-10-12T12:30:00+02:00', '0.7', 'monthly');
     $sitemap->add(URL::route('contact'), '2014-10-12T12:30:00+02:00', '0.7', 'monthly');

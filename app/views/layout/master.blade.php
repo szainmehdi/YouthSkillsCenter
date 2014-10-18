@@ -51,16 +51,19 @@
                     <li @if(Route::currentRouteName() == 'home') class="hidden" @endif>
                         <a href="/">Home</a>
                     </li>
-                    <li class="{{ setActive('preschool') }}">
+                    <li class="{{ set_link_active('preschool') }}">
                         <a href="/preschool">Preschool</a>
                     </li>
-                    <li class="{{ setActive('school-age-care') }}">
+                    <li class="{{ set_link_active('school-age-care') }}">
                         <a href="/school-age-care">School-Age Care</a>
                     </li>
-                    <li class="{{ setActive('about') }}">
+                    <li class="{{ set_link_active('faqs') }}">
+                        <a href="/frequently-asked-questions">FAQs</a>
+                    </li>
+                    <li class="{{ set_link_active('about') }}">
                         <a href="/about">About</a>
                     </li>
-                    <li class="{{ setActive('contact') }}">
+                    <li class="{{ set_link_active('contact') }}">
                         <a href="/contact">Contact</a>
                     </li>
                 </ul>
