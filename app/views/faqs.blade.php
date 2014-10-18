@@ -84,7 +84,17 @@
                         Skills Center, and our staff takes care to assist each child with their homework in an engaging,
                         thought-provoking manner.
                     </blockquote>
+                    <h3 class="text-accent-five">Do you offer financial aid or subsidized care opportunities?</h3>
+                    <blockquote>
+                        We're strong believers that every family should have access to affordable child care services. 
+                        At Youth Skills Center, we accept the several subsidized care programs, including
+                        <a href="http://dpss.lacounty.gov/dpss/calworks/childcare.cfm" target="_blank">CalWORKs Child
+                        Care Program</a>, <a href="http://rccfc.org/aboutus.htm" target="_blank">First 5</a>, and more. To get started with subsidized care programs,
+                        contact the <a href="http://www.cdss.ca.gov/cdssweb/PG78.htm" target="_blank">Department of Social Services</a>. They will help you get the best subsidy program quickly
+                        and easily.
+                    </blockquote>
                     <h3 class="text-accent-five">What programs do you offer?</h3>
+
                     <!-- Portfolio Grid Section -->
                     <section id="portfolio" class="thin">
                         <div class="row">
