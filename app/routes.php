@@ -21,17 +21,30 @@
 */
 
 use Roumen\Sitemap\Sitemap;
+use YouthSkillsCenter\Auth\User;
+use YouthSkillsCenter\Auth\UserValidator;
+use YouthSkillsCenter\Billing\BillingInterface;
+use YouthSkillsCenter\Billing\StripeBilling;
+use YouthSkillsCenter\Families\Family;
+
+App::bind('confide.user_validator', UserValidator::class);
 
 Route::get('/', [ 'as' => 'home', 'uses' => 'HomeController@index']);
-Route::get('/about', [ 'as' => 'about', 'uses' => 'HomeController@about']);
-Route::get('/preschool', [ 'as' => 'preschool', 'uses' => 'HomeController@preschool']);
-Route::get('/programs', [ 'as' => 'programs', 'uses' => 'HomeController@programs']);
-Route::get('/privacy-policy', [ 'as' => 'privacy-policy', 'uses' => 'HomeController@privacyPolicy']);
-Route::get('/school-age-care', [ 'as' => 'school-age-care', 'uses' => 'HomeController@schoolAgeCare']);
-Route::get('/frequently-asked-questions', [ 'as' => 'faqs', 'uses' => 'HomeController@faqs']);
-Route::get('/contact', [ 'as' => 'contact', 'uses' => 'HomeController@contact']);
-Route::post('/contact/submit', [ 'as' => 'contact-submit', 'uses' => 'HomeController@contactSubmit']);
+Route::get('about', [ 'as' => 'about', 'uses' => 'HomeController@about']);
+Route::get('preschool', [ 'as' => 'preschool', 'uses' => 'HomeController@preschool']);
+Route::get('programs', [ 'as' => 'programs', 'uses' => 'HomeController@programs']);
+Route::get('privacy-policy', [ 'as' => 'privacy-policy', 'uses' => 'HomeController@privacyPolicy']);
+Route::get('school-age-care', [ 'as' => 'school-age-care', 'uses' => 'HomeController@schoolAgeCare']);
+Route::get('frequently-asked-questions', [ 'as' => 'faqs', 'uses' => 'HomeController@faqs']);
+Route::get('contact', [ 'as' => 'contact', 'uses' => 'HomeController@contact']);
+Route::post('contact/submit', [ 'as' => 'contact-submit', 'uses' => 'HomeController@contactSubmit']);
 
+Route::group(['prefix'=>'myYSC', 'before' => 'auth'], function () {
+    Route::get('/', ['as' => 'users.home', 'uses' => 'MyYscController@index']);
+    Route::get('/profile', ['as' => 'users.profile', 'uses' => 'MyYscController@profile']);
+    Route::get('/billing', ['as' => 'users.billing', 'uses' => 'MyYscController@billing']);
+    Route::post('/update-card', ['as' => 'users.updateCard', 'uses' => 'MyYscController@updateCard']);
+});
 Route::get('/sitemap', [ 'as' => 'sitemap' , 'uses' => function () {
 
     /** @var Sitemap $sitemap */
@@ -47,4 +60,19 @@ Route::get('/sitemap', [ 'as' => 'sitemap' , 'uses' => function () {
     $sitemap->add(URL::route('privacy-policy'), '2014-10-12T12:30:00+02:00', '0.3', 'monthly');
 
     return $sitemap->render('xml');
-}]);
+}]);//
+
+// Confide routes
+Route::get('users/create', 'UsersController@create');
+Route::get('myYSC/signup', ['as' => 'users.signup', 'uses' => 'UsersController@create']);
+Route::post('users', 'UsersController@store');
+Route::get('users/login', 'UsersController@login');
+Route::get('myYSC/login', ['as' => 'users.login', 'uses' => 'UsersController@login']);
+Route::post('users/login', 'UsersController@doLogin');
+Route::get('users/confirm/{code}', 'UsersController@confirm');
+Route::get('users/forgot_password', 'UsersController@forgotPassword');
+Route::post('users/forgot_password', 'UsersController@doForgotPassword');
+Route::get('users/reset_password/{token}', 'UsersController@resetPassword');
+Route::post('users/reset_password', 'UsersController@doResetPassword');
+Route::get('users/logout', 'UsersController@logout');
+Route::get('myYSC/logout',['as' => 'users.logout', 'uses' =>  'UsersController@logout']);

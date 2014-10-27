@@ -22,7 +22,9 @@ module.exports = function (grunt) {
         },
         uglify: {
             options: {
-                mangle: false  // Use if you want the names of your functions and variables unchanged
+                mangle: false,  // Use if you want the names of your functions and variables unchanged,
+                compress: false,
+                beautify: true
             },
             main: {
                 files: {
@@ -59,15 +61,6 @@ module.exports = function (grunt) {
                     //compiling www.less into www.css
                     "./public/assets/css/main.css": "./resources/assets/css/main.less",
                 }
-            }
-        },
-        phpunit: {
-            classes: {
-                dir: 'app/tests/'   //location of the tests
-            },
-            options: {
-                bin: 'vendor/bin/phpunit',
-                colors: true
             }
         },
         watch: {
@@ -111,13 +104,6 @@ module.exports = function (grunt) {
                 options: {
                     livereload: true                        //reloads the browser
                 }
-            },
-            tests: {
-                files: [
-                    'app/controllers/*.php',
-                    'app/*.php'
-                ],  //the task will run only when you save files in this location
-                tasks: ['phpunit']
             }
         }
     });

@@ -124,6 +124,9 @@ return array(
 
 
 		'Roumen\Sitemap\SitemapServiceProvider',
+        'Zizaco\Confide\ServiceProvider',
+
+        'YouthSkillsCenter\Billing\BillingServiceProvider',
 
 	),
 
@@ -192,6 +195,7 @@ return array(
 		'Validator'       => 'Illuminate\Support\Facades\Validator',
 		'View'            => 'Illuminate\Support\Facades\View',
 
+        'Confide'         => 'Zizaco\Confide\Facade',
 	),
 
 );
