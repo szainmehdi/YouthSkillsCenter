@@ -2,6 +2,10 @@
 
 use Eloquent;
 
+/**
+ * YouthSkillsCenter\Billing\Program
+ *
+ */
 class Program extends Eloquent {
 
 

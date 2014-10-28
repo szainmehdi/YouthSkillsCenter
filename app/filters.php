@@ -49,6 +49,8 @@ Route::filter('auth', function()
 });
 
 
+Entrust::routeNeedsRole('myYSC/manage*', 'owner', Redirect::to('myYSC'));
+
 Route::filter('auth.basic', function()
 {
 	return Auth::basic();

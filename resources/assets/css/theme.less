@@ -872,8 +872,11 @@ body {
 //  background: @gray-lighter;
   border-bottom: 2px solid @gray-lighter;
 
-  .form-group .control-label {
-    line-height: 34px;
+//  .form-group .control-label, .form-group .form-control-static {
+//    line-height: 34px;
+//  }
+  .action-buttons {
+    margin: 30px 0;
   }
   .nav > li{
     > a {
@@ -890,4 +893,27 @@ body {
       }
     }
   }
+}
+.my-ysc-nav .nav-pills {
+  margin-bottom: 40px;
+//  border-left: 3px solid #cfcfcf;
+}
+.nav-pills li.divider {
+  border-top: 1px solid @gray-lighter;
+  margin-top: 5px;
+  padding: 5px 0 0 0;
+}
+
+.content-empty {
+  padding: 50px;
+  font-weight: 200;
+  color: #aaa;
+  font-size: 28px;
+  text-align: center;
+}
+
+.family-access-code {
+  background: lightyellow;
+  font-size: 3em;
+  text-align: center;
 }

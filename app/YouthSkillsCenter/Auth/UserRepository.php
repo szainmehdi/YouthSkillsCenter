@@ -3,6 +3,7 @@
 use App;
 use Config;
 use Confide;
+use Hash;
 
 /**
  * Class UserRepository
@@ -60,7 +61,7 @@ class UserRepository {
 
     public function confirm($code) {
 
-        /*
+
         $user = User::whereConfirmationCode($code)->first();
 
         if(is_null($user)) {
@@ -70,7 +71,7 @@ class UserRepository {
         $user->confirmed = 1;
 
         return $user->save();
-        */
+
 
     }
 
@@ -97,7 +98,7 @@ class UserRepository {
      */
     public function existsButNotConfirmed($input) {
 
-        $user = Confide::getUserByEmail($input);
+        $user = Confide::getUserByEmailOrUsername($input);
 
         if ($user) {
             $correctPassword = Hash::check(
@@ -107,6 +108,10 @@ class UserRepository {
 
             return (!$user->confirmed && $correctPassword);
         }
+    }
+
+    public function exists($email) {
+        return User::whereEmail($email)->first() !== null;
     }
 
     /**

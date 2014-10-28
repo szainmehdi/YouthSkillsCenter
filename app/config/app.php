@@ -125,8 +125,11 @@ return array(
 
 		'Roumen\Sitemap\SitemapServiceProvider',
         'Zizaco\Confide\ServiceProvider',
+        'Zizaco\Entrust\EntrustServiceProvider',
+        'Laracasts\Validation\ValidationServiceProvider',
 
         'YouthSkillsCenter\Billing\BillingServiceProvider',
+        'YouthSkillsCenter\Auth\AuthServiceProvider',
 
 	),
 
@@ -196,6 +199,7 @@ return array(
 		'View'            => 'Illuminate\Support\Facades\View',
 
         'Confide'         => 'Zizaco\Confide\Facade',
+        'Entrust'         => 'Zizaco\Entrust\EntrustFacade',
 	),
 
 );

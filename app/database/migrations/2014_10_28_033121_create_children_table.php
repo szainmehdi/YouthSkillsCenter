@@ -17,10 +17,16 @@ class CreateChildrenTable extends Migration {
 			$table->increments('id');
 			$table->string('first_name');
 			$table->string('last_name');
+			$table->string('photo')->nullable();
 			$table->date('dob')->nullable();
-			$table->string('profile_picture')->nullable();
-			$table->integer('family_id');
-			$table->timestamps();
+			$table->integer('weekly_tuition')->default(0);
+			$table->integer('family_id')->unsigned()->index();
+			$table->foreign('family_id')
+                ->references('id')->on('families')
+                ->onUpdate('cascade')
+                ->onDelete('cascade');
+
+            $table->timestamps();
 		});
 	}
 

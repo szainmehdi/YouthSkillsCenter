@@ -74,20 +74,18 @@ class UsersController extends Controller {
         if ($repo->login($input)) {
             return Redirect::to('/myYSC/');
         } else {
-            if (empty($input['email']) || empty($input['password'])) {
-                $err_msg = Lang::get('alerts.wrong_credentials');
-            } else if ($repo->isThrottled($input)) {
+            if ($repo->isThrottled($input)) {
                 $err_msg = Lang::get('confide::confide.alerts.too_many_attempts');
             } elseif ($repo->existsButNotConfirmed($input)) {
                 $err_msg = Lang::get('confide::confide.alerts.not_confirmed');
             } else {
                 $err_msg = Lang::get('alerts.wrong_credentials');
             }
-
-            return Redirect::action('UsersController@login')
-                ->withInput(Input::except('password'))
-                ->with('error', $err_msg);
         }
+
+        return Redirect::action('UsersController@login')
+            ->withInput(Input::except('password'))
+            ->with('error', $err_msg);
     }
 
     /**

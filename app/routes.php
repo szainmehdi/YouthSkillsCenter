@@ -27,8 +27,6 @@ use YouthSkillsCenter\Billing\BillingInterface;
 use YouthSkillsCenter\Billing\StripeBilling;
 use YouthSkillsCenter\Families\Family;
 
-App::bind('confide.user_validator', UserValidator::class);
-
 Route::get('/', [ 'as' => 'home', 'uses' => 'HomeController@index']);
 Route::get('about', [ 'as' => 'about', 'uses' => 'HomeController@about']);
 Route::get('preschool', [ 'as' => 'preschool', 'uses' => 'HomeController@preschool']);
@@ -42,8 +40,24 @@ Route::post('contact/submit', [ 'as' => 'contact-submit', 'uses' => 'HomeControl
 Route::group(['prefix'=>'myYSC', 'before' => 'auth'], function () {
     Route::get('/', ['as' => 'users.home', 'uses' => 'MyYscController@index']);
     Route::get('/profile', ['as' => 'users.profile', 'uses' => 'MyYscController@profile']);
+    Route::post('/profile', ['as' => 'users.updateProfile', 'uses' => 'MyYscController@updateProfile']);
     Route::get('/billing', ['as' => 'users.billing', 'uses' => 'MyYscController@billing']);
     Route::post('/update-card', ['as' => 'users.updateCard', 'uses' => 'MyYscController@updateCard']);
+
+    Route::group(['prefix' => 'manage'], function () {
+        Route::get('/', ['as' => 'users.manage.home', 'uses' => 'MyYscController@manage']);
+        Route::get('families', ['as' => 'manage.families', 'uses' => 'MyYscController@families']);
+
+        Route::get('families/create', ['as' => 'manage.families.create', 'uses' => 'MyYscController@createFamily']);
+        Route::post('families/create', ['as' => 'manage.families.doCreate', 'uses' => 'MyYscController@doCreateFamily']);
+
+        Route::get('families/{id}', ['as' => 'manage.families.view', 'uses' => 'MyYscController@showFamily']);
+        Route::get('families/{id}/edit', ['as' => 'manage.families.edit', 'uses' => 'MyYscController@editFamily']);
+        Route::post('families/{id}/edit', ['as' => 'manage.families.doEdit', 'uses' => 'MyYscController@doEditFamily']);
+
+        Route::get('families/{id}/add-child', ['as' => 'manage.families.addChild', 'uses' => 'MyYscController@addChild']);
+        Route::post('families/{id}/add-child', ['as' => 'manage.families.doAddChild', 'uses' => 'MyYscController@doAddChild']);
+    });
 });
 Route::get('/sitemap', [ 'as' => 'sitemap' , 'uses' => function () {
 

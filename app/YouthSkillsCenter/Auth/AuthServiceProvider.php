@@ -10,5 +10,5 @@ class AuthServiceProvider extends ServiceProvider {
      * @return void
      */
     public function register() {
-        App::bind('confide.user_validator', UserValidator::class);
+        $this->app->bind('confide.user_validator', UserValidator::class);
     }}

@@ -4,6 +4,9 @@
     Dashboard | MyYSC
 @stop
 
+@section('my-ysc-nav')
+    @include('my-ysc.nav')
+@stop
 @section('my-ysc-content')
     <h2>Home</h2>
     <p class="lead">Welcome to myYSC!</p>
