@@ -10,7 +10,8 @@
         "zizaco/entrust": "1.2.*@dev",
         "stripe/stripe-php": "1.17.2",
         "fzaninotto/faker": "1.4.0",
-        "laracasts/validation": "~1.0"
+        "laracasts/validation": "~1.0",
+		"laravel/cashier": "~2.0"
 	},
 	"require-dev": {
         "way/generators": "~2.0",

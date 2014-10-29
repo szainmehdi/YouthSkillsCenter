@@ -1,15 +1,27 @@
 <?php
 
+use YouthSkillsCenter\Billing\BillingInterface;
 use YouthSkillsCenter\Families\Child;
 use YouthSkillsCenter\Families\Family;
 
 class MyYscController extends BaseController {
 
+    /**
+     * @var \YouthSkillsCenter\Billing\BillingInterface
+     */
+    private $billing;
+
+    public function __construct(BillingInterface $billing) {
+        View::share('user', Auth::user());
+        $this->billing = $billing;
+    }
     public function index() {
-        return View::make('my-ysc.index');
+        return View::make('my-ysc.index')
+            ->withFamily(Auth::user()->family);
     }
     public function billing() {
-        return View::make('my-ysc.billing');
+        return View::make('my-ysc.billing')
+            ->withFamily(Auth::user()->family);
     }
     public function profile() {
         return View::make('my-ysc.profile');
@@ -35,7 +47,27 @@ class MyYscController extends BaseController {
 
     }
     public function updateCard() {
-        dd(Input::all());
+        $token = Input::get('stripe-token');
+        $family = Auth::user()->family;
+
+        if(!$this->billing->planExists($family->key)) {
+            $this->billing->createPlan($family->key, $family->nickname, $family->totalWeeklyBilling() * 100, 'week');
+        }
+        $family->subscription($family->key)->create($token);
+
+        return Redirect::back()->with('notice', 'You have successfully enrolled in AutoPay.');
+    }
+    public function cancelAutoPay() {
+        $family = Auth::user()->family;
+
+        if(!$family->isSignedUpForAutoPay())
+             return Redirect::back()->with('error', 'No active subscription found.');
+
+        $family->subscription()->cancel();
+
+        return Redirect::back()
+            ->with('notice', 'You have successfully cancelled your AutoPay subscription.<br/>If you require a refund,
+                    <a href="/contact">contact us</a> and we will process your refund.');
     }
 
     public function manage() {
@@ -71,7 +103,7 @@ class MyYscController extends BaseController {
                 ->with('error', $error);
         }
 
-        return Redirect::route('manage.families');
+        return Redirect::route('manage.families.view', [$family->id]);
     }
     public function editFamily($id) {
         $f = Family::find($id);
@@ -123,7 +155,7 @@ class MyYscController extends BaseController {
         $child = new Child([
             'first_name' => Input::get('first_name'),
             'last_name' => Input::get('last_name'),
-            'weekly_tuition' => (int)(Input::get('weekly_tuition') * 100),
+            'weekly_tuition' => Input::get('weekly_tuition'),
             'family_id' => $family->id,
         ]);
 
@@ -145,23 +177,35 @@ class MyYscController extends BaseController {
             return Redirect::back();
         }
 
-        return View::make('my-ysc.admin.families.edit')
-            ->withFamily($family);
+        $child = $family->children()->whereId($id)->first();
+        if(is_null($child)) {
+            return Redirect::back();
+        }
+
+        return View::make('my-ysc.admin.families.edit-child')
+            ->withFamily($family)
+            ->withChild($child);
     }
     public function doEditChild($family_id, $id) {
 
-        $family = Family::find($id);
+        $family = Family::find($family_id);
         if(is_null($family)) {
             return Redirect::back();
         }
 
-        $family->family_key = Input::get('family_key');
-        $family->nickname = Input::get('nickname');
+        $child = $family->children()->whereId($id)->first();
+        if(is_null($child)) {
+            return Redirect::back();
+        }
 
-        if(!$family->save()) {
-            $error = $family->errors()->all(':message');
+        $child->first_name = Input::get('first_name');
+        $child->last_name = Input::get('last_name');
+        $child->weekly_tuition = Input::get('weekly_tuition');
 
-            return Redirect::route('manage.families.edit', [$id])
+        if(!$child->save()) {
+            $error = $child->errors()->all(':message');
+
+            return Redirect::back()
                 ->withInput(Input::all())
                 ->with('error', $error);
         }
@@ -169,4 +213,23 @@ class MyYscController extends BaseController {
         return Redirect::route('manage.families.view', [$family->id]);
     }
 
+    public function removeChild($family_id, $id) {
+
+        $family = Family::find($family_id);
+        if (is_null($family)) {
+            return Redirect::back();
+        }
+
+        /** @var Child $child */
+        $child = $family->children()->whereId($id)->first();
+        if (is_null($child)) {
+            return Redirect::back();
+        }
+
+        $child->delete();
+
+        return Redirect::back();
+
+
+    }
 }

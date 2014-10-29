@@ -42,3 +42,15 @@ function random_color($seed = 'thisismyseed') {
     ];
     return $colors[mt_rand(0, count($colors) - 1)];
 }
+
+function mailto($email, array $attributes = []) {
+    $link = "<a href=\"mailto:{$email}\"";
+
+    foreach($attributes as $k => $v) {
+        $link .= " {$k}=\"{$v}\"";
+    }
+
+    $link .= ">" .e($email). "</a>";
+
+    return $link;
+}

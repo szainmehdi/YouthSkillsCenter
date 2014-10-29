@@ -1,6 +1,7 @@
 <?php namespace YouthSkillsCenter\Billing;
 
 use Illuminate\Support\ServiceProvider;
+use YouthSkillsCenter\Auth\User;
 
 class BillingServiceProvider extends ServiceProvider {
 

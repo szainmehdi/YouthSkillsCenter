@@ -8,6 +8,17 @@ $(function() {
         }, 1000, 'easeInOutExpo');
         event.preventDefault();
     });
+
+    $('.bootbox-confirm').click(function(e){
+        var $this = $(this);
+        e.preventDefault();
+        return bootbox.confirm("<h1 class='bootbox-heading'><i class='fa fa-exclamation-triangle'></i> Are you sure?</h1>", function(result) {
+            if(result) {
+                $this.unbind('click');
+                $this[0].click();
+            }
+        });
+    });
 });
 
 // Highlight the top nav as scrolling occurs

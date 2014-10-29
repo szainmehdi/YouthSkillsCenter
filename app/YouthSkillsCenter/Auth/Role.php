@@ -12,10 +12,10 @@ use Zizaco\Entrust\EntrustRole;
  * @property-read \Illuminate\Database\Eloquent\Collection|\Config::get('auth.model[] $users
  * @property-read \Illuminate\Database\Eloquent\Collection|\Config::get('entrust::permission[] $perms
  * @property mixed $permissions
- * @method static \Illuminate\Database\Query\Builder|\YouthSkillsCenter\Auth\Role whereId($value) 
- * @method static \Illuminate\Database\Query\Builder|\YouthSkillsCenter\Auth\Role whereName($value) 
- * @method static \Illuminate\Database\Query\Builder|\YouthSkillsCenter\Auth\Role whereCreatedAt($value) 
- * @method static \Illuminate\Database\Query\Builder|\YouthSkillsCenter\Auth\Role whereUpdatedAt($value) 
+ * @method static \Illuminate\Database\Query\Builder|\YouthSkillsCenter\Auth\Role whereId($value)
+ * @method static \Illuminate\Database\Query\Builder|\YouthSkillsCenter\Auth\Role whereName($value)
+ * @method static \Illuminate\Database\Query\Builder|\YouthSkillsCenter\Auth\Role whereCreatedAt($value)
+ * @method static \Illuminate\Database\Query\Builder|\YouthSkillsCenter\Auth\Role whereUpdatedAt($value)
  */
 class Role extends EntrustRole {
 

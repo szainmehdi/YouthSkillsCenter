@@ -127,6 +127,7 @@ return array(
         'Zizaco\Confide\ServiceProvider',
         'Zizaco\Entrust\EntrustServiceProvider',
         'Laracasts\Validation\ValidationServiceProvider',
+        'Laravel\Cashier\CashierServiceProvider',
 
         'YouthSkillsCenter\Billing\BillingServiceProvider',
         'YouthSkillsCenter\Auth\AuthServiceProvider',

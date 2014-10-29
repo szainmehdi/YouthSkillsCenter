@@ -16,6 +16,7 @@ class UsersSeeder extends Seeder {
         $user->email = 'admin@ysc5.com';
         $user->password = Hash::make(getenv('default_admin_password'));
         $user->confirmation_code = md5(uniqid(mt_rand(), true));
+        $user->family_id = 1;
         $user->confirmed = true;
         $user->save([], $validate = false);
 

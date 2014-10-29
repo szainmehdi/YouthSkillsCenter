@@ -1,5 +1,6 @@
 <?php namespace YouthSkillsCenter\Billing;
 
+use Config;
 use Exception;
 use Stripe;
 use Stripe_ApiConnectionError;
@@ -8,6 +9,7 @@ use Stripe_CardError;
 use Stripe_Charge;
 use Stripe_Error;
 use Stripe_InvalidRequestError;
+use Stripe_Plan;
 use YouthSkillsCenter\Auth\User;
 
 class StripeBilling implements BillingInterface {
@@ -48,4 +50,50 @@ class StripeBilling implements BillingInterface {
             // Something else happened, completely unrelated to Stripe
         }
     }
+
+    public function createPlan($id, $name, $amount, $interval) {
+
+        return Stripe_Plan::create([
+            "amount" => $amount,
+            "interval" => $interval,
+            "name" => $name,
+            "currency" => "usd",
+            "id" => $id
+        ]);
+
+    }
+    public function addToPlanAmount($id, $amountChanged) {
+
+        $p = Stripe_Plan::retrieve($id);
+
+        $p->amount += $amountChanged;
+
+        return $p->save();
+
+    }
+
+    /**
+     * @param $id
+     *
+     * @return mixed
+     */
+    public function retrievePlan($id) {
+        return Stripe_Plan::retrieve($id);
+    }
+
+    /**
+     * @param $id
+     *
+     * @return boolean
+     */
+    public function planExists($id) {
+        try {
+            $this->retrievePlan($id);
+            return true;
+        } catch(Stripe_InvalidRequestError $e) {
+            return false;
+        }
+    }
+
+
 }

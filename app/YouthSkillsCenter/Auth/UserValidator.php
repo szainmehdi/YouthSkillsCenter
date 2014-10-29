@@ -1,6 +1,8 @@
 <?php namespace YouthSkillsCenter\Auth;
 
 use App;
+use Lang;
+use YouthSkillsCenter\Families\Family;
 use Zizaco\Confide\ConfideUserInterface;
 use Zizaco\Confide\UserValidatorInterface;
 
@@ -25,7 +27,7 @@ class UserValidator implements UserValidatorInterface {
             'username' => 'required|email|unique:users',
             'email' => 'required|email|unique:users',
             'password' => 'required|min:4|confirmed',
-            'access_code' => 'required|size:9',
+            'access_code' => 'required',
         ],
         'update' => [
             'first_name' => 'required',
@@ -35,6 +37,8 @@ class UserValidator implements UserValidatorInterface {
             'password' => 'required|min:4',
         ]
     ];
+
+
 
     /**
      * Validates the given user. Should check if all the fields are correctly.
@@ -99,12 +103,27 @@ class UserValidator implements UserValidatorInterface {
     }
 
     public function validateAccessCode(ConfideUserInterface $user) {
+        if($user->exists) return true;
+
         $access_code = $user->access_code;
+
+        /** @var Family $family */
+        $family = Family::whereAccessCode($access_code)->first();
+
+        if(is_null($family)){
+            $this->attachErrorMsg(
+                $user,
+                'Invalid access code.',
+                'access_code'
+            );
+            return false;
+        }
+
+        $user->family_id = $family->id;
+        $family->resetAccessCode();
 
         unset($user->access_code);
         return true;
-
-
     }
 
     /**

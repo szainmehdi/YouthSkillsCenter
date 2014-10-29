@@ -1,6 +1,8 @@
 <?php
 
-return array(
+use YouthSkillsCenter\Families\Family;
+
+return [
 
 	/*
 	|--------------------------------------------------------------------------
@@ -14,18 +16,19 @@ return array(
 	|
 	*/
 
-	'mailgun' => array(
+	'mailgun' => [
 		'domain' => 'mailgun.redcode.io',
 		'secret' => '6ee37b6d9bbadfd08ed3b68092bc23af',
-	),
+	],
 
-	'mandrill' => array(
+	'mandrill' => [
 		'secret' => '',
-	),
+	],
 
-	'stripe' => array(
-		'model'  => 'User',
-		'secret' => '',
-	),
+	'stripe' => [
+		'model'  => Family::class,
+		'secret' => getenv('stripe_secret'),
+		'publishable' => getenv('stripe_publishable'),
+	],
 
-);
+];

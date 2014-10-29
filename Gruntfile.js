@@ -12,6 +12,7 @@ module.exports = function (grunt) {
                     './bower_components/bootstrap/dist/js/bootstrap.js',
                     './bower_components/jasny-bootstrap/dist/js/jasny-bootstrap.js',
                     './bower_components/jquery.easing/js/jquery.easing.js',
+                    './bower_components/bootbox/bootbox.js',
                     './resources/assets/js/main.js'
                 ],
                 dest: './public/assets/js/main.js'

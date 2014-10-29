@@ -96,9 +96,9 @@ class UsersController extends Controller {
      * @return  Illuminate\Http\Response
      */
     public function confirm($code) {
-//        $repo = App::make('YouthSkillsCenter\Auth\UserRepository');
+        $repo = App::make('YouthSkillsCenter\Auth\UserRepository');
 
-        if (Confide::confirm($code)) {
+        if ($repo->confirm($code)) {
             $notice_msg = Lang::get('confide::confide.alerts.confirmation');
             return Redirect::action('UsersController@login')
                 ->with('notice', $notice_msg);

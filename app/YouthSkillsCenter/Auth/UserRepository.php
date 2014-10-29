@@ -4,6 +4,7 @@ use App;
 use Config;
 use Confide;
 use Hash;
+use Str;
 
 /**
  * Class UserRepository
@@ -21,6 +22,8 @@ class UserRepository {
     public function signup($input) {
 
         $user = new User;
+
+        array_map('trim', $input);
 
         $user->username = array_get($input, 'email');
         $user->email = array_get($input, 'email');

@@ -1,7 +1,7 @@
 @extends('layout.my-ysc')
 
 @section('title')
-    Add Child | MyYSC
+    Edit Child | MyYSC
 @stop
 
 @section('my-ysc-nav')
@@ -10,7 +10,7 @@
 @section('my-ysc-content')
     <h2><a href="{{ URL::route('manage.families') }}"><i class="fa fa-arrow-circle-left"></i> Families</a></h2>
 
-    <h3>Add a Child</h3>
+    <h3>Edit {{ $child->first_name }} {{ $child->last_name }}</h3>
     {{ Form::open(['method' => 'post', 'class' => 'form-horizontal', 'role' => 'form']) }}
         @if (Session::get('error'))
             <div class="alert alert-error alert-danger">
@@ -28,13 +28,13 @@
         <div class="form-group">
             <label class="col-sm-2 control-label" for="first_name">First Name</label>
             <div class="col-sm-5">
-                <input class="form-control" type="text" placeholder="" id="first_name" name="first_name" value="{{ Input::old('first_name') }}" />
+                <input class="form-control" type="text" placeholder="" id="first_name" name="first_name" value="{{ $child->first_name }}" />
             </div>
         </div>
         <div class="form-group">
             <label class="col-sm-2 control-label" for="last_name">Last Name</label>
             <div class="col-sm-5">
-                <input class="form-control" type="text" placeholder="" id="last_name" name="last_name" value="{{ Input::old('last_name') }}" />
+                <input class="form-control" type="text" placeholder="" id="last_name" name="last_name" value="{{ $child->last_name }}" />
             </div>
         </div>
         <div class="form-group">
@@ -42,7 +42,7 @@
             <div class="col-sm-5">
                     <div class="input-group">
                         <div class="input-group-addon">$</div>
-                        <input class="form-control" type="number" step="any" min="10" max="500" placeholder="" id="weekly_tuition" name="weekly_tuition" value="{{ Input::old('weekly_tuition') }}" />
+                        <input class="form-control" type="number" step="any" min="10" max="500" placeholder="" id="weekly_tuition" name="weekly_tuition" value="{{ $child->weekly_tuition }}" />
                     </div>
             </div>
         </div>

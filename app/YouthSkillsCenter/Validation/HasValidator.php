@@ -37,6 +37,11 @@ trait HasValidator {
             $this->errors = $validator->messages();
         }
 
+        $validate = $this->customValidation();
+        if(! $validate($this)) {
+            return false;
+        }
+
         return $validator->passes();
     }
 
@@ -107,5 +112,11 @@ trait HasValidator {
             'create' => [],
             'update' => []
         ];
+    }
+
+    public function customValidation() {
+        return function(self $model) {
+            // do custom validation.
+        };
     }
 } 

@@ -42,7 +42,8 @@ Route::group(['prefix'=>'myYSC', 'before' => 'auth'], function () {
     Route::get('/profile', ['as' => 'users.profile', 'uses' => 'MyYscController@profile']);
     Route::post('/profile', ['as' => 'users.updateProfile', 'uses' => 'MyYscController@updateProfile']);
     Route::get('/billing', ['as' => 'users.billing', 'uses' => 'MyYscController@billing']);
-    Route::post('/update-card', ['as' => 'users.updateCard', 'uses' => 'MyYscController@updateCard']);
+    Route::post('/billing/update-card', ['as' => 'users.updateCard', 'uses' => 'MyYscController@updateCard']);
+    Route::get('/billing/cancel-autopay', ['as' => 'users.cancelAutoPay', 'uses' => 'MyYscController@cancelAutoPay']);
 
     Route::group(['prefix' => 'manage'], function () {
         Route::get('/', ['as' => 'users.manage.home', 'uses' => 'MyYscController@manage']);
@@ -55,8 +56,14 @@ Route::group(['prefix'=>'myYSC', 'before' => 'auth'], function () {
         Route::get('families/{id}/edit', ['as' => 'manage.families.edit', 'uses' => 'MyYscController@editFamily']);
         Route::post('families/{id}/edit', ['as' => 'manage.families.doEdit', 'uses' => 'MyYscController@doEditFamily']);
 
-        Route::get('families/{id}/add-child', ['as' => 'manage.families.addChild', 'uses' => 'MyYscController@addChild']);
-        Route::post('families/{id}/add-child', ['as' => 'manage.families.doAddChild', 'uses' => 'MyYscController@doAddChild']);
+        Route::get('families/{id}/child/add', ['as' => 'manage.families.addChild', 'uses' => 'MyYscController@addChild']);
+        Route::post('families/{id}/child/add', ['as' => 'manage.families.doAddChild', 'uses' => 'MyYscController@doAddChild']);
+
+        Route::get('families/{id}/child/{child_id}/edit', ['as' => 'manage.families.editChild', 'uses' => 'MyYscController@editChild']);
+
+        Route::get('families/{id}/child/{child_id}/remove', ['as' => 'manage.families.removeChild', 'uses' => 'MyYscController@removeChild']);
+
+        Route::post('families/{id}/child/{child_id}/edit', ['as' => 'manage.families.doEditChild', 'uses' => 'MyYscController@doEditChild']);
     });
 });
 Route::get('/sitemap', [ 'as' => 'sitemap' , 'uses' => function () {
