@@ -18,7 +18,7 @@ class UsersSeeder extends Seeder {
         $user->confirmation_code = md5(uniqid(mt_rand(), true));
         $user->family_id = 1;
         $user->confirmed = true;
-        $user->forceSave();
+        $user->save();
 
         // Roles
         $owner = new Role();
