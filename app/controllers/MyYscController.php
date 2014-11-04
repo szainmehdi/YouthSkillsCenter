@@ -55,7 +55,7 @@ class MyYscController extends BaseController {
         $amount = number_format($family->totalWeeklyBilling(),0);
         $plan_id = $family->key . '-$' . $amount;
         if(!$this->billing->planExists($plan_id)) {
-            $this->billing->createPlan($plan_id,$family->nickname . ' - $' . $amount,$amount,'week');
+            $this->billing->createPlan($plan_id,$family->nickname . ' - $' . $amount,$amount * 100,'week');
         }
 
         try {
