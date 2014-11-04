@@ -11,19 +11,6 @@
 @section('my-ysc-content')
     <h2>Billing</h2>
     <p class="lead">Manage your weekly payment.</p>
-
-
-    @if (Session::get('error'))
-        <div class="alert alert-error alert-danger">
-            @if (is_array(Session::get('error')))
-                {{ head(Session::get('error')) }}
-            @endif
-        </div>
-    @endif
-
-    @if (Session::get('notice'))
-        <div class="alert alert-info">{{ Session::get('notice') }}</div>
-    @endif
     <section class="thin">
         <h3>Weekly Billing</h3>
         <div class="row">
@@ -48,6 +35,21 @@
     @if(!$family->isSignedUpForAutoPay())
         <h4>Sign Up for Auto Pay</h4>
         {{ Form::open(['id' => 'billing-form', 'route' => 'users.updateCard', 'method' => 'post', 'class' => 'form-horizontal', 'role' => 'form']) }}
+
+            @if (Session::get('error'))
+                <div class="alert alert-error alert-danger">
+                    @if (is_array(Session::get('error')))
+                        {{ head(Session::get('error')) }}
+                    @else
+                        {{ Session::get('error') }}
+                    @endif
+                </div>
+            @endif
+
+            @if (Session::get('notice'))
+                <div class="alert alert-notice">{{ Session::get('notice') }}</div>
+            @endif
+
             <div class="alert alert-error alert-danger" style="display:none"></div>
             <div class="form-group">
                 <label for="card-number" class="col-sm-2 control-label">Card Number</label>
@@ -74,6 +76,8 @@
             <div class="form-actions form-group">
                 <button type="submit" class="btn btn-primary">Sign Up</button>
             </div>
+
+
         {{ Form::close() }}
     @endif
 

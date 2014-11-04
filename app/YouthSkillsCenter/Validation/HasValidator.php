@@ -38,7 +38,7 @@ trait HasValidator {
         }
 
         $validate = $this->customValidation();
-        if(! $validate($this)) {
+        if($validate($this) === false) {
             return false;
         }
 
@@ -99,7 +99,7 @@ trait HasValidator {
      */
     public function errors()
     {
-        return $this->errors ?: $this->errors = App::make('Illuminate\Support\MessageBag');
+        return $this->errors ?: $this->errors = \App::make('Illuminate\Support\MessageBag');
     }
 
     /**
@@ -117,6 +117,8 @@ trait HasValidator {
     public function customValidation() {
         return function(self $model) {
             // do custom validation.
+
+            return true;
         };
     }
 } 

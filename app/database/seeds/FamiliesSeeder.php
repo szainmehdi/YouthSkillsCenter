@@ -137,6 +137,7 @@ class FamiliesSeeder extends Seeder {
             ]);
 
 
+
             if (!empty($f['children'])) {
                 foreach ($f['children'] as $child) {
                     Child::create([

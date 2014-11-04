@@ -111,7 +111,7 @@ class Child extends Eloquent implements Validatable {
             $newAmount = (int)$child->weekly_tuition * 100;
             $oldAmount = $child->getOriginal('weekly_tuition');
 
-            if($child->family->isSignedUpForAutoPay() && $newAmount != $oldAmount) {
+            if(!is_null($child->family) && $child->family->isSignedUpForAutoPay() && $newAmount != $oldAmount) {
                 $child->errors = new MessageBag(['weekly_tuition' => 'Cannot change weekly tuition while the family is signed up for AutoPay.']);
                 return false;
             }

@@ -48,12 +48,28 @@ class MyYscController extends BaseController {
     }
     public function updateCard() {
         $token = Input::get('stripe-token');
+
+        /** @var Family $family */
         $family = Auth::user()->family;
 
-        if(!$this->billing->planExists($family->key)) {
-            $this->billing->createPlan($family->key, $family->nickname, $family->totalWeeklyBilling() * 100, 'week');
+        $amount = number_format($family->totalWeeklyBilling(),0);
+        $plan_id = $family->key . '-$' . $amount;
+        if(!$this->billing->planExists($plan_id)) {
+            $this->billing->createPlan($plan_id,$family->nickname . ' - $' . $amount,$amount,'week');
         }
-        $family->subscription($family->key)->create($token);
+
+        try {
+            if ($family->onGracePeriod() && $family->stripe_plan == $plan_id) {
+                $family->subscription($plan_id)->resume($token);
+            } else if($family->onGracePeriod()) {
+                $family->subscription($family->stripe_plan)->resume($token);
+                $family->subscription($plan_id)->swap();
+            } else if(!$family->subscribed()) {
+                $family->subscription($plan_id)->create($token, ['description' => $family->nickname,]);
+            }
+        } catch(Exception $e) {
+            return Redirect::back()->with('error', $e->getMessage());
+        }
 
         return Redirect::back()->with('notice', 'You have successfully enrolled in AutoPay.');
     }
