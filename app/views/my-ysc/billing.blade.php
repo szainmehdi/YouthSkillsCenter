@@ -77,18 +77,6 @@
                 <button type="submit" class="btn btn-primary">Sign Up</button>
             </div>
         {{ Form::close() }}
-
-        <script type="text/javascript">
-            (function() {
-                var ss = document.createElement('script'); ss.type = 'text/javascript'; ss.async = true;
-                ss.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'seal.ssls.com/script.js?cn=' + window.location.host;
-                var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ss, s);
-            })();
-        </script>
-        <!-- Do not alter for the seal to work properly -->
-        <div id="sslsSiteSeal">
-            seal by <a href="https://ssls.com/">SSLs.com</a>
-        </div>
     @endif
 
 
