@@ -46,6 +46,24 @@ class User extends Eloquent implements ConfideUserInterface, BillableInterface {
     use BillableTrait;
     use HasRole;
 
+    /**
+     * Overwrites the original save method in order to perform
+     * validation before actually saving the object.
+     *
+     * @param array $options
+     * @param bool $mustBeValid
+     *
+     * @throws \YouthSkillsCenter\Exceptions\ValidationException
+     * @return bool
+     */
+    public function save(array $options = [], $mustBeValid = true) {
+        if ($mustBeValid and !$this->isValid()) {
+            return false;
+        }
+
+        return parent::save($options);
+    }
+
     /*
 	|--------------------------------------------------------------------------
 	| Attributes
