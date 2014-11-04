@@ -48,7 +48,7 @@
         </div>
         <div class="form-actions form-group">
             <div class="col-sm-12">
-                <button type="submit" class="btn btn-primary">Add Child</button>
+                <button type="submit" class="btn btn-primary">Save</button>
                 <a href="{{ URL::route('manage.families.view', [$family->id]) }}" class="btn btn-default"><i class="fa fa-times"></i> &nbsp; Cancel</a>
             </div>
         </div>
