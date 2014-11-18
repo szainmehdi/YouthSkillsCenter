@@ -65,7 +65,8 @@ class MyYscController extends BaseController {
                 $family->subscription($family->stripe_plan)->resume($token);
                 $family->subscription($plan_id)->swap();
             } else if(!$family->subscribed()) {
-                $family->subscription($plan_id)->create($token, ['description' => $family->nickname,]);
+                $family->subscription($plan_id)
+                    ->create($token, ['description' => $family->nickname, 'email' => Auth::user()->email]);
             }
         } catch(Exception $e) {
             return Redirect::back()->with('error', $e->getMessage());
