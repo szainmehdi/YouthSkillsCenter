@@ -59,9 +59,9 @@ class HomeController extends BaseController {
 				'email' => $input['email'],
 				'message' => $input['msg']
 			]);
-			Mail::send('emails.form-entry', $input, function($msg) use ($lead){
+			Mail::send('emails.form-entry', $input, function(\Illuminate\Mail\Message $msg) use ($lead){
 				$msg->to('hello@ysc5.com', 'Youth Skills Center')
-					->replyTo($lead->email, $lead->name)
+					->replyTo($lead->email)
 					->subject('A message from ' . $lead->name);
 			});
 			return JsonResponse::HTTP_OK;
