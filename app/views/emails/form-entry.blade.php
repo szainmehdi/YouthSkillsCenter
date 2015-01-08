@@ -4,13 +4,12 @@
 		<meta charset="utf-8">
 	</head>
 	<body>
-		<h2>{{ $name }} left a message for you!</h2>
-
 		<div>
-			{{ $name }} [{{ $email }} | {{ $phone }}] says: <br />
-
+			{{ $msg }}
 			<blockquote>
-			    {{ $msg }}
+				<strong>Name: </strong>{{{ $name }}}<br/>
+				<strong>Email: </strong><a href="mailto:{{{ $email }}}"></a>{{{ $email }}}<br/>
+				<strong>Phone: </strong><a href="tel:{{{ $phone }}}">{{{ $phone }}}</a><br/>
 			</blockquote>
 		</div>
 	</body>
