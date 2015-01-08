@@ -57,7 +57,7 @@ class HomeController extends BaseController {
 				'name' => $input['name'],
 				'phone' => $input['phone'],
 				'email' => $input['email'],
-				'message' => $input['message']
+				'message' => $input['msg']
 			]);
 			Mail::send('emails.form-entry', $input, function(\Illuminate\Mail\Message $msg) use ($lead){
 				$msg->to('hello@ysc5.com', 'Youth Skills Center')
