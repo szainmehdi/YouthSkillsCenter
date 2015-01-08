@@ -53,8 +53,16 @@ class HomeController extends BaseController {
 	{
         $input = Input::only(['name', 'phone', 'email', 'msg']);
 		if(count(array_filter($input)) == 4) {
-			Mail::send('emails.form-entry', $input, function($msg) {
-				$msg->to('info@ysc5.com', 'Youth Skills Center')->subject('New Web Lead from youthskillscenter.com');
+			$lead = \YouthSkillsCenter\Lead::create([
+				'name' => $input['name'],
+				'phone' => $input['phone'],
+				'email' => $input['email'],
+				'message' => $input['message']
+			]);
+			Mail::send('emails.form-entry', $input, function(\Illuminate\Mail\Message $msg) use ($lead){
+				$msg->to('hello@ysc5.com', 'Youth Skills Center')
+					->replyTo($lead->email, $lead->name)
+					->subject('A message from ' . $lead->name);
 			});
 			return JsonResponse::HTTP_OK;
 		} else {
