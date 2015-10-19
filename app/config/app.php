@@ -128,6 +128,7 @@ return array(
         'Zizaco\Entrust\EntrustServiceProvider',
         'Laracasts\Validation\ValidationServiceProvider',
         'Laravel\Cashier\CashierServiceProvider',
+        'Bugsnag\BugsnagLaravel\BugsnagLaravelServiceProvider',
 
         'YouthSkillsCenter\Billing\BillingServiceProvider',
         'YouthSkillsCenter\Auth\AuthServiceProvider',
@@ -201,6 +202,7 @@ return array(
 
         'Confide'         => 'Zizaco\Confide\Facade',
         'Entrust'         => 'Zizaco\Entrust\EntrustFacade',
+        'Bugsnag'         => 'Bugsnag\BugsnagLaravel\BugsnagFacade',
 	),
 
 );
