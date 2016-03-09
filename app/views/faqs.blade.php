@@ -1,7 +1,7 @@
 @extends('layout.master')
 
 @section('title')
-    Frequenty Asked Questions in Preschool & Child Care
+    Frequently Asked Questions in Preschool & Child Care
 @stop
 
 @section('content')

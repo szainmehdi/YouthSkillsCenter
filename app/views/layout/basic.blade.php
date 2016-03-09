@@ -48,9 +48,6 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
-                    <li @if(Route::currentRouteName() == 'home') class="hidden" @endif>
-                        <a href="/">Home</a>
-                    </li>
                     <li class="dropdown visible-sm visible-md">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Programs <span class="caret"></span></a>
                         <ul class="dropdown-menu dropdown-menu-left" role="menu">
@@ -68,8 +65,16 @@
                     <li class="hidden-sm hidden-md {{ set_link_active('school-age-care') }}">
                         <a href="/school-age-care">School-Age Care</a>
                     </li>
-                    <li class="{{ set_link_active('faqs') }}">
-                        <a href="/frequently-asked-questions">FAQs</a>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Resources <span class="caret"></span></a>
+                        <ul class="dropdown-menu dropdown-menu-left" role="menu">
+                            <li class="{{ set_link_active('frequently-asked-questions') }}">
+                                <a href="/frequently-asked-questions">FAQs</a>
+                            </li>
+                            <li class="{{ set_link_active('for-parents') }}">
+                                <a href="/for-parents">For Parents</a>
+                            </li>
+                        </ul>
                     </li>
                     <li class="{{ set_link_active('about') }}">
                         <a href="/about">About</a>
