@@ -34,7 +34,7 @@ Route::get('programs', [ 'as' => 'programs', 'uses' => 'HomeController@programs'
 Route::get('privacy-policy', [ 'as' => 'privacy-policy', 'uses' => 'HomeController@privacyPolicy']);
 Route::get('school-age-care', [ 'as' => 'school-age-care', 'uses' => 'HomeController@schoolAgeCare']);
 Route::get('frequently-asked-questions', [ 'as' => 'faqs', 'uses' => 'HomeController@faqs']);
-Route::get('for-parents', [ 'as' => 'for-parents', 'uses' => 'HomeController@forParents']);
+Route::get('calendar', [ 'as' => 'calendar', 'uses' => 'HomeController@calendar']);
 Route::get('contact', [ 'as' => 'contact', 'uses' => 'HomeController@contact']);
 Route::post('contact/submit', [ 'as' => 'contact-submit', 'uses' => 'HomeController@contactSubmit']);
 

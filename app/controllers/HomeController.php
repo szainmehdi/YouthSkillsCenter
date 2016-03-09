@@ -45,9 +45,9 @@ class HomeController extends BaseController {
 	{
 		return View::make('faqs');
 	}
-	public function forParents()
+	public function calendar()
 	{
-		return View::make('for-parents');
+		return View::make('calendar');
 	}
 	public function contact()
 	{

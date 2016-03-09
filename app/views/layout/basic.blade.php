@@ -71,16 +71,16 @@
                             <li class="{{ set_link_active('frequently-asked-questions') }}">
                                 <a href="/frequently-asked-questions">FAQs</a>
                             </li>
-                            <li class="{{ set_link_active('for-parents') }}">
-                                <a href="/for-parents">For Parents</a>
+                            <li class="{{ set_link_active('calendar') }}">
+                                <a href="/calendar">Calendar</a>
                             </li>
                         </ul>
                     </li>
                     <li class="visible-xs {{ set_link_active('frequently-asked-questions') }}">
                         <a href="/frequently-asked-questions">FAQs</a>
                     </li>
-                    <li class="visible-xs {{ set_link_active('for-parents') }}">
-                        <a href="/for-parents">For Parents</a>
+                    <li class="visible-xs {{ set_link_active('calendar') }}">
+                        <a href="/calendar">Calendar</a>
                     </li>
                     <li class="{{ set_link_active('about') }}">
                         <a href="/about">About</a>

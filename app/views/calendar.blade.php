@@ -1,7 +1,7 @@
 @extends('layout.master')
 
 @section('title')
-    Resources For Parents
+    Events & Holidays
 @stop
 
 @section('content')
@@ -9,8 +9,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-10 col-md-offset-1">
-                    <h2 class="text-primary">Resources for Parents</h2>
-                    <h4>School Events & Holidays</h4>
+                    <h2>School Events & Holidays</h2>
+                    <br>
                     <div data-tockify-component="calendar" data-tockify-calendar="youthskillscenter"></div>
                 </div>
             </div>
