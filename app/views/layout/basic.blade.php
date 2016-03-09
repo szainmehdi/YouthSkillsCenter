@@ -65,7 +65,7 @@
                     <li class="hidden-sm hidden-md {{ set_link_active('school-age-care') }}">
                         <a href="/school-age-care">School-Age Care</a>
                     </li>
-                    <li class="dropdown">
+                    <li class="dropdown hidden-xs">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Resources <span class="caret"></span></a>
                         <ul class="dropdown-menu dropdown-menu-left" role="menu">
                             <li class="{{ set_link_active('frequently-asked-questions') }}">
@@ -75,6 +75,12 @@
                                 <a href="/for-parents">For Parents</a>
                             </li>
                         </ul>
+                    </li>
+                    <li class="visible-xs {{ set_link_active('frequently-asked-questions') }}">
+                        <a href="/frequently-asked-questions">FAQs</a>
+                    </li>
+                    <li class="visible-xs {{ set_link_active('for-parents') }}">
+                        <a href="/for-parents">For Parents</a>
                     </li>
                     <li class="{{ set_link_active('about') }}">
                         <a href="/about">About</a>
