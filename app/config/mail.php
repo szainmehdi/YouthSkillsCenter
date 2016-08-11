@@ -28,7 +28,7 @@ return array(
 	|
 	*/
 
-	'host' => 'smtp.mailgun.org',
+	'host' => getenv('mail_host'),
 
 	/*
 	|--------------------------------------------------------------------------
@@ -80,7 +80,7 @@ return array(
 	|
 	*/
 
-	'username' => 'postmaster@mailgun.redcode.io',
+	'username' => getenv('mail_username'),
 
 	/*
 	|--------------------------------------------------------------------------
@@ -93,7 +93,7 @@ return array(
 	|
 	*/
 
-	'password' => '6ee37b6d9bbadfd08ed3b68092bc23af',
+	'password' => getenv('mail_password'),
 
 	/*
 	|--------------------------------------------------------------------------
