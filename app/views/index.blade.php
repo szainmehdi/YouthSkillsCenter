@@ -4,6 +4,11 @@
     Home
 @stop
 
+@section('description')
+    Licensed preschool and before &amp; after school child care center
+    serving Riverside, Mira Loma, Jurupa Valley, and Eastvale.
+@endsection
+
 @section('content')
 
     <header>
@@ -20,7 +25,7 @@
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <p class="lead" style="line-height: 1.8em;">
-                        As a new licensed <strong>preschool and child care center serving Riverside, Mira Loma,
+                        As a licensed <strong>preschool and child care center serving Riverside, Mira Loma,
                         Jurupa Valley, and Eastvale,</strong>, we're shaking things up! Youth Skills Center
                         provides an all-around great learning experience for your child <strong>at the lowest prices
                         in the business</strong>! We <strong>infuse technology with our daily activities</strong> and prepare today's
@@ -95,12 +100,12 @@
                 </div>
                 <div class="col-md-7">
                     <h1 class="highlighted-heading">
-                        Now Enrolling for 2014-15<span class="sr-only"> for Preschool &amp; Child Care</span>.
+                        Now Enrolling for 2016-17<span class="sr-only"> for Preschool &amp; Child Care</span>.
                     </h1>
                     <div class="clearfix"></div>
                     <p class="lead" style="margin-top: 16px;">
                         Call now for the best prices <span class="sr-only">in preschool &amp; child care in the
-                        Riverside, Mira Loma, Jurupa Valley, and Eastvale areas.</span> for the 2014-15 school year.
+                        Riverside, Mira Loma, Jurupa Valley, and Eastvale areas.</span> for the 2016-17 school year.
                     </p>
                     <a href="/contact" class="btn btn-xl">Contact Us</a>
                 </div>

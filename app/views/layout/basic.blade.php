@@ -106,7 +106,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-4">
-                    <span class="copyright">&copy; 2014 - Youth Skills Center</span>
+                    <span class="copyright">&copy; {{ date('Y') }} - Youth Skills Center</span>
                 </div>
                 <div class="col-md-4">
                     <ul class="list-inline social-buttons">
