@@ -1,9 +1,5 @@
 @extends('layout.master')
 
-@section('title')
-    Home
-@stop
-
 @section('description')
     Licensed preschool and before &amp; after school child care center
     serving Riverside, Mira Loma, Jurupa Valley, and Eastvale.
